@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T09:21:45.139Z",
+  "generatedAt": "2026-05-10T10:17:36.607Z",
   "kanjivgDirScanned": "/Users/tranhaibang/.gemini/antigravity/scratch/practice-sheet-builder/public/kanjivg",
   "totalSvgFilesFound": 6702,
   "skippedFiles": 272,
@@ -1101,9 +1101,9 @@
   "jlptCounts": {
     "N5": 103,
     "N4": 181,
-    "N3": 739,
-    "N2": 408,
-    "N1": 799
+    "N3": 420,
+    "N2": 319,
+    "N1": 1011
   },
   "jlptMissingSvg": {
     "N5": [],
@@ -1113,7 +1113,7 @@
     "N1": []
   },
   "duplicateJlptClassifications": [],
-  "otherKanjiVg": 4043,
+  "otherKanjiVg": 4242,
   "notes": [
     "joyoKanji.json is a local subset — not the full 2136 Jouyou list.",
     "jlptKanji.json is a curated reference — not official JLPT data.",
