@@ -1,54 +1,8554 @@
 {
-  "source": "Japanese Agency for Cultural Affairs / 常用漢字表",
-  "url": "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/kanji/",
+  "source": "kanjidic2 (EDRDG) — https://www.edrdg.org/kanjidic/kanjidic2.xml.gz",
+  "license": "CC BY-SA 4.0 — https://www.edrdg.org/edrdg/licence.html",
+  "generatedAt": "2026-05-10T09:21:33.759Z",
   "countExpected": 2136,
-  "note": "This file is a local subset containing only the Jouyou Kanji that match available KanjiVG SVG files. The full 2136-character Jouyou list can be added to expand coverage. Grade 1-6 = Kyouiku Kanji; S = secondary-school Jouyou (not assigned a primary grade).",
+  "countActual": 2136,
+  "note": "Grade 1-6 = Kyouiku Kanji; S = secondary-school Jouyou (kanjidic2 grade 8).",
   "items": [
-    {"char": "一", "grade": 1},
-    {"char": "七", "grade": 1},
-    {"char": "万", "grade": 2},
-    {"char": "三", "grade": 1},
-    {"char": "上", "grade": 1},
-    {"char": "下", "grade": 1},
-    {"char": "中", "grade": 1},
-    {"char": "九", "grade": 1},
-    {"char": "二", "grade": 1},
-    {"char": "五", "grade": 1},
-    {"char": "人", "grade": 1},
-    {"char": "先", "grade": 1},
-    {"char": "八", "grade": 1},
-    {"char": "六", "grade": 1},
-    {"char": "十", "grade": 1},
-    {"char": "千", "grade": 1},
-    {"char": "口", "grade": 1},
-    {"char": "右", "grade": 1},
-    {"char": "四", "grade": 1},
-    {"char": "土", "grade": 1},
-    {"char": "大", "grade": 1},
-    {"char": "学", "grade": 1},
-    {"char": "小", "grade": 1},
-    {"char": "山", "grade": 1},
-    {"char": "川", "grade": 1},
-    {"char": "左", "grade": 1},
-    {"char": "年", "grade": 1},
-    {"char": "張", "grade": "S"},
-    {"char": "感", "grade": 5},
-    {"char": "手", "grade": 1},
-    {"char": "日", "grade": 1},
-    {"char": "月", "grade": 1},
-    {"char": "木", "grade": 1},
-    {"char": "本", "grade": 1},
-    {"char": "校", "grade": 1},
-    {"char": "水", "grade": 1},
-    {"char": "火", "grade": 1},
-    {"char": "生", "grade": 1},
-    {"char": "田", "grade": 1},
-    {"char": "百", "grade": 1},
-    {"char": "目", "grade": 1},
-    {"char": "緊", "grade": "S"},
-    {"char": "耳", "grade": 1},
-    {"char": "語", "grade": 2},
-    {"char": "足", "grade": 1},
-    {"char": "金", "grade": 1}
+    {
+      "char": "一",
+      "grade": 1
+    },
+    {
+      "char": "七",
+      "grade": 1
+    },
+    {
+      "char": "三",
+      "grade": 1
+    },
+    {
+      "char": "上",
+      "grade": 1
+    },
+    {
+      "char": "下",
+      "grade": 1
+    },
+    {
+      "char": "中",
+      "grade": 1
+    },
+    {
+      "char": "九",
+      "grade": 1
+    },
+    {
+      "char": "二",
+      "grade": 1
+    },
+    {
+      "char": "五",
+      "grade": 1
+    },
+    {
+      "char": "人",
+      "grade": 1
+    },
+    {
+      "char": "休",
+      "grade": 1
+    },
+    {
+      "char": "先",
+      "grade": 1
+    },
+    {
+      "char": "入",
+      "grade": 1
+    },
+    {
+      "char": "八",
+      "grade": 1
+    },
+    {
+      "char": "六",
+      "grade": 1
+    },
+    {
+      "char": "円",
+      "grade": 1
+    },
+    {
+      "char": "出",
+      "grade": 1
+    },
+    {
+      "char": "力",
+      "grade": 1
+    },
+    {
+      "char": "十",
+      "grade": 1
+    },
+    {
+      "char": "千",
+      "grade": 1
+    },
+    {
+      "char": "口",
+      "grade": 1
+    },
+    {
+      "char": "右",
+      "grade": 1
+    },
+    {
+      "char": "名",
+      "grade": 1
+    },
+    {
+      "char": "四",
+      "grade": 1
+    },
+    {
+      "char": "土",
+      "grade": 1
+    },
+    {
+      "char": "夕",
+      "grade": 1
+    },
+    {
+      "char": "大",
+      "grade": 1
+    },
+    {
+      "char": "天",
+      "grade": 1
+    },
+    {
+      "char": "女",
+      "grade": 1
+    },
+    {
+      "char": "子",
+      "grade": 1
+    },
+    {
+      "char": "字",
+      "grade": 1
+    },
+    {
+      "char": "学",
+      "grade": 1
+    },
+    {
+      "char": "小",
+      "grade": 1
+    },
+    {
+      "char": "山",
+      "grade": 1
+    },
+    {
+      "char": "川",
+      "grade": 1
+    },
+    {
+      "char": "左",
+      "grade": 1
+    },
+    {
+      "char": "年",
+      "grade": 1
+    },
+    {
+      "char": "手",
+      "grade": 1
+    },
+    {
+      "char": "文",
+      "grade": 1
+    },
+    {
+      "char": "日",
+      "grade": 1
+    },
+    {
+      "char": "早",
+      "grade": 1
+    },
+    {
+      "char": "月",
+      "grade": 1
+    },
+    {
+      "char": "木",
+      "grade": 1
+    },
+    {
+      "char": "本",
+      "grade": 1
+    },
+    {
+      "char": "村",
+      "grade": 1
+    },
+    {
+      "char": "林",
+      "grade": 1
+    },
+    {
+      "char": "校",
+      "grade": 1
+    },
+    {
+      "char": "森",
+      "grade": 1
+    },
+    {
+      "char": "正",
+      "grade": 1
+    },
+    {
+      "char": "気",
+      "grade": 1
+    },
+    {
+      "char": "水",
+      "grade": 1
+    },
+    {
+      "char": "火",
+      "grade": 1
+    },
+    {
+      "char": "犬",
+      "grade": 1
+    },
+    {
+      "char": "玉",
+      "grade": 1
+    },
+    {
+      "char": "王",
+      "grade": 1
+    },
+    {
+      "char": "生",
+      "grade": 1
+    },
+    {
+      "char": "田",
+      "grade": 1
+    },
+    {
+      "char": "男",
+      "grade": 1
+    },
+    {
+      "char": "町",
+      "grade": 1
+    },
+    {
+      "char": "白",
+      "grade": 1
+    },
+    {
+      "char": "百",
+      "grade": 1
+    },
+    {
+      "char": "目",
+      "grade": 1
+    },
+    {
+      "char": "石",
+      "grade": 1
+    },
+    {
+      "char": "空",
+      "grade": 1
+    },
+    {
+      "char": "立",
+      "grade": 1
+    },
+    {
+      "char": "竹",
+      "grade": 1
+    },
+    {
+      "char": "糸",
+      "grade": 1
+    },
+    {
+      "char": "耳",
+      "grade": 1
+    },
+    {
+      "char": "花",
+      "grade": 1
+    },
+    {
+      "char": "草",
+      "grade": 1
+    },
+    {
+      "char": "虫",
+      "grade": 1
+    },
+    {
+      "char": "見",
+      "grade": 1
+    },
+    {
+      "char": "貝",
+      "grade": 1
+    },
+    {
+      "char": "赤",
+      "grade": 1
+    },
+    {
+      "char": "足",
+      "grade": 1
+    },
+    {
+      "char": "車",
+      "grade": 1
+    },
+    {
+      "char": "金",
+      "grade": 1
+    },
+    {
+      "char": "雨",
+      "grade": 1
+    },
+    {
+      "char": "青",
+      "grade": 1
+    },
+    {
+      "char": "音",
+      "grade": 1
+    },
+    {
+      "char": "万",
+      "grade": 2
+    },
+    {
+      "char": "丸",
+      "grade": 2
+    },
+    {
+      "char": "交",
+      "grade": 2
+    },
+    {
+      "char": "京",
+      "grade": 2
+    },
+    {
+      "char": "今",
+      "grade": 2
+    },
+    {
+      "char": "会",
+      "grade": 2
+    },
+    {
+      "char": "体",
+      "grade": 2
+    },
+    {
+      "char": "何",
+      "grade": 2
+    },
+    {
+      "char": "作",
+      "grade": 2
+    },
+    {
+      "char": "元",
+      "grade": 2
+    },
+    {
+      "char": "兄",
+      "grade": 2
+    },
+    {
+      "char": "光",
+      "grade": 2
+    },
+    {
+      "char": "公",
+      "grade": 2
+    },
+    {
+      "char": "内",
+      "grade": 2
+    },
+    {
+      "char": "冬",
+      "grade": 2
+    },
+    {
+      "char": "刀",
+      "grade": 2
+    },
+    {
+      "char": "分",
+      "grade": 2
+    },
+    {
+      "char": "切",
+      "grade": 2
+    },
+    {
+      "char": "前",
+      "grade": 2
+    },
+    {
+      "char": "北",
+      "grade": 2
+    },
+    {
+      "char": "午",
+      "grade": 2
+    },
+    {
+      "char": "半",
+      "grade": 2
+    },
+    {
+      "char": "南",
+      "grade": 2
+    },
+    {
+      "char": "原",
+      "grade": 2
+    },
+    {
+      "char": "友",
+      "grade": 2
+    },
+    {
+      "char": "古",
+      "grade": 2
+    },
+    {
+      "char": "台",
+      "grade": 2
+    },
+    {
+      "char": "合",
+      "grade": 2
+    },
+    {
+      "char": "同",
+      "grade": 2
+    },
+    {
+      "char": "回",
+      "grade": 2
+    },
+    {
+      "char": "図",
+      "grade": 2
+    },
+    {
+      "char": "国",
+      "grade": 2
+    },
+    {
+      "char": "園",
+      "grade": 2
+    },
+    {
+      "char": "地",
+      "grade": 2
+    },
+    {
+      "char": "場",
+      "grade": 2
+    },
+    {
+      "char": "声",
+      "grade": 2
+    },
+    {
+      "char": "売",
+      "grade": 2
+    },
+    {
+      "char": "夏",
+      "grade": 2
+    },
+    {
+      "char": "外",
+      "grade": 2
+    },
+    {
+      "char": "多",
+      "grade": 2
+    },
+    {
+      "char": "夜",
+      "grade": 2
+    },
+    {
+      "char": "太",
+      "grade": 2
+    },
+    {
+      "char": "妹",
+      "grade": 2
+    },
+    {
+      "char": "姉",
+      "grade": 2
+    },
+    {
+      "char": "室",
+      "grade": 2
+    },
+    {
+      "char": "家",
+      "grade": 2
+    },
+    {
+      "char": "寺",
+      "grade": 2
+    },
+    {
+      "char": "少",
+      "grade": 2
+    },
+    {
+      "char": "岩",
+      "grade": 2
+    },
+    {
+      "char": "工",
+      "grade": 2
+    },
+    {
+      "char": "市",
+      "grade": 2
+    },
+    {
+      "char": "帰",
+      "grade": 2
+    },
+    {
+      "char": "広",
+      "grade": 2
+    },
+    {
+      "char": "店",
+      "grade": 2
+    },
+    {
+      "char": "弓",
+      "grade": 2
+    },
+    {
+      "char": "引",
+      "grade": 2
+    },
+    {
+      "char": "弟",
+      "grade": 2
+    },
+    {
+      "char": "弱",
+      "grade": 2
+    },
+    {
+      "char": "強",
+      "grade": 2
+    },
+    {
+      "char": "当",
+      "grade": 2
+    },
+    {
+      "char": "形",
+      "grade": 2
+    },
+    {
+      "char": "後",
+      "grade": 2
+    },
+    {
+      "char": "心",
+      "grade": 2
+    },
+    {
+      "char": "思",
+      "grade": 2
+    },
+    {
+      "char": "戸",
+      "grade": 2
+    },
+    {
+      "char": "才",
+      "grade": 2
+    },
+    {
+      "char": "教",
+      "grade": 2
+    },
+    {
+      "char": "数",
+      "grade": 2
+    },
+    {
+      "char": "新",
+      "grade": 2
+    },
+    {
+      "char": "方",
+      "grade": 2
+    },
+    {
+      "char": "明",
+      "grade": 2
+    },
+    {
+      "char": "星",
+      "grade": 2
+    },
+    {
+      "char": "春",
+      "grade": 2
+    },
+    {
+      "char": "昼",
+      "grade": 2
+    },
+    {
+      "char": "時",
+      "grade": 2
+    },
+    {
+      "char": "晴",
+      "grade": 2
+    },
+    {
+      "char": "曜",
+      "grade": 2
+    },
+    {
+      "char": "書",
+      "grade": 2
+    },
+    {
+      "char": "朝",
+      "grade": 2
+    },
+    {
+      "char": "来",
+      "grade": 2
+    },
+    {
+      "char": "東",
+      "grade": 2
+    },
+    {
+      "char": "楽",
+      "grade": 2
+    },
+    {
+      "char": "歌",
+      "grade": 2
+    },
+    {
+      "char": "止",
+      "grade": 2
+    },
+    {
+      "char": "歩",
+      "grade": 2
+    },
+    {
+      "char": "母",
+      "grade": 2
+    },
+    {
+      "char": "毎",
+      "grade": 2
+    },
+    {
+      "char": "毛",
+      "grade": 2
+    },
+    {
+      "char": "池",
+      "grade": 2
+    },
+    {
+      "char": "汽",
+      "grade": 2
+    },
+    {
+      "char": "活",
+      "grade": 2
+    },
+    {
+      "char": "海",
+      "grade": 2
+    },
+    {
+      "char": "点",
+      "grade": 2
+    },
+    {
+      "char": "父",
+      "grade": 2
+    },
+    {
+      "char": "牛",
+      "grade": 2
+    },
+    {
+      "char": "理",
+      "grade": 2
+    },
+    {
+      "char": "用",
+      "grade": 2
+    },
+    {
+      "char": "画",
+      "grade": 2
+    },
+    {
+      "char": "番",
+      "grade": 2
+    },
+    {
+      "char": "直",
+      "grade": 2
+    },
+    {
+      "char": "矢",
+      "grade": 2
+    },
+    {
+      "char": "知",
+      "grade": 2
+    },
+    {
+      "char": "社",
+      "grade": 2
+    },
+    {
+      "char": "秋",
+      "grade": 2
+    },
+    {
+      "char": "科",
+      "grade": 2
+    },
+    {
+      "char": "答",
+      "grade": 2
+    },
+    {
+      "char": "算",
+      "grade": 2
+    },
+    {
+      "char": "米",
+      "grade": 2
+    },
+    {
+      "char": "紙",
+      "grade": 2
+    },
+    {
+      "char": "細",
+      "grade": 2
+    },
+    {
+      "char": "組",
+      "grade": 2
+    },
+    {
+      "char": "絵",
+      "grade": 2
+    },
+    {
+      "char": "線",
+      "grade": 2
+    },
+    {
+      "char": "羽",
+      "grade": 2
+    },
+    {
+      "char": "考",
+      "grade": 2
+    },
+    {
+      "char": "聞",
+      "grade": 2
+    },
+    {
+      "char": "肉",
+      "grade": 2
+    },
+    {
+      "char": "自",
+      "grade": 2
+    },
+    {
+      "char": "船",
+      "grade": 2
+    },
+    {
+      "char": "色",
+      "grade": 2
+    },
+    {
+      "char": "茶",
+      "grade": 2
+    },
+    {
+      "char": "行",
+      "grade": 2
+    },
+    {
+      "char": "西",
+      "grade": 2
+    },
+    {
+      "char": "親",
+      "grade": 2
+    },
+    {
+      "char": "角",
+      "grade": 2
+    },
+    {
+      "char": "言",
+      "grade": 2
+    },
+    {
+      "char": "計",
+      "grade": 2
+    },
+    {
+      "char": "記",
+      "grade": 2
+    },
+    {
+      "char": "話",
+      "grade": 2
+    },
+    {
+      "char": "語",
+      "grade": 2
+    },
+    {
+      "char": "読",
+      "grade": 2
+    },
+    {
+      "char": "谷",
+      "grade": 2
+    },
+    {
+      "char": "買",
+      "grade": 2
+    },
+    {
+      "char": "走",
+      "grade": 2
+    },
+    {
+      "char": "近",
+      "grade": 2
+    },
+    {
+      "char": "通",
+      "grade": 2
+    },
+    {
+      "char": "週",
+      "grade": 2
+    },
+    {
+      "char": "道",
+      "grade": 2
+    },
+    {
+      "char": "遠",
+      "grade": 2
+    },
+    {
+      "char": "里",
+      "grade": 2
+    },
+    {
+      "char": "野",
+      "grade": 2
+    },
+    {
+      "char": "長",
+      "grade": 2
+    },
+    {
+      "char": "門",
+      "grade": 2
+    },
+    {
+      "char": "間",
+      "grade": 2
+    },
+    {
+      "char": "雪",
+      "grade": 2
+    },
+    {
+      "char": "雲",
+      "grade": 2
+    },
+    {
+      "char": "電",
+      "grade": 2
+    },
+    {
+      "char": "頭",
+      "grade": 2
+    },
+    {
+      "char": "顔",
+      "grade": 2
+    },
+    {
+      "char": "風",
+      "grade": 2
+    },
+    {
+      "char": "食",
+      "grade": 2
+    },
+    {
+      "char": "首",
+      "grade": 2
+    },
+    {
+      "char": "馬",
+      "grade": 2
+    },
+    {
+      "char": "高",
+      "grade": 2
+    },
+    {
+      "char": "魚",
+      "grade": 2
+    },
+    {
+      "char": "鳥",
+      "grade": 2
+    },
+    {
+      "char": "鳴",
+      "grade": 2
+    },
+    {
+      "char": "麦",
+      "grade": 2
+    },
+    {
+      "char": "黄",
+      "grade": 2
+    },
+    {
+      "char": "黒",
+      "grade": 2
+    },
+    {
+      "char": "丁",
+      "grade": 3
+    },
+    {
+      "char": "世",
+      "grade": 3
+    },
+    {
+      "char": "両",
+      "grade": 3
+    },
+    {
+      "char": "主",
+      "grade": 3
+    },
+    {
+      "char": "乗",
+      "grade": 3
+    },
+    {
+      "char": "予",
+      "grade": 3
+    },
+    {
+      "char": "事",
+      "grade": 3
+    },
+    {
+      "char": "仕",
+      "grade": 3
+    },
+    {
+      "char": "他",
+      "grade": 3
+    },
+    {
+      "char": "代",
+      "grade": 3
+    },
+    {
+      "char": "住",
+      "grade": 3
+    },
+    {
+      "char": "使",
+      "grade": 3
+    },
+    {
+      "char": "係",
+      "grade": 3
+    },
+    {
+      "char": "倍",
+      "grade": 3
+    },
+    {
+      "char": "全",
+      "grade": 3
+    },
+    {
+      "char": "具",
+      "grade": 3
+    },
+    {
+      "char": "写",
+      "grade": 3
+    },
+    {
+      "char": "列",
+      "grade": 3
+    },
+    {
+      "char": "助",
+      "grade": 3
+    },
+    {
+      "char": "勉",
+      "grade": 3
+    },
+    {
+      "char": "動",
+      "grade": 3
+    },
+    {
+      "char": "勝",
+      "grade": 3
+    },
+    {
+      "char": "化",
+      "grade": 3
+    },
+    {
+      "char": "区",
+      "grade": 3
+    },
+    {
+      "char": "医",
+      "grade": 3
+    },
+    {
+      "char": "去",
+      "grade": 3
+    },
+    {
+      "char": "反",
+      "grade": 3
+    },
+    {
+      "char": "取",
+      "grade": 3
+    },
+    {
+      "char": "受",
+      "grade": 3
+    },
+    {
+      "char": "号",
+      "grade": 3
+    },
+    {
+      "char": "向",
+      "grade": 3
+    },
+    {
+      "char": "君",
+      "grade": 3
+    },
+    {
+      "char": "味",
+      "grade": 3
+    },
+    {
+      "char": "命",
+      "grade": 3
+    },
+    {
+      "char": "和",
+      "grade": 3
+    },
+    {
+      "char": "品",
+      "grade": 3
+    },
+    {
+      "char": "員",
+      "grade": 3
+    },
+    {
+      "char": "商",
+      "grade": 3
+    },
+    {
+      "char": "問",
+      "grade": 3
+    },
+    {
+      "char": "坂",
+      "grade": 3
+    },
+    {
+      "char": "央",
+      "grade": 3
+    },
+    {
+      "char": "始",
+      "grade": 3
+    },
+    {
+      "char": "委",
+      "grade": 3
+    },
+    {
+      "char": "守",
+      "grade": 3
+    },
+    {
+      "char": "安",
+      "grade": 3
+    },
+    {
+      "char": "定",
+      "grade": 3
+    },
+    {
+      "char": "実",
+      "grade": 3
+    },
+    {
+      "char": "客",
+      "grade": 3
+    },
+    {
+      "char": "宮",
+      "grade": 3
+    },
+    {
+      "char": "宿",
+      "grade": 3
+    },
+    {
+      "char": "寒",
+      "grade": 3
+    },
+    {
+      "char": "対",
+      "grade": 3
+    },
+    {
+      "char": "局",
+      "grade": 3
+    },
+    {
+      "char": "屋",
+      "grade": 3
+    },
+    {
+      "char": "岸",
+      "grade": 3
+    },
+    {
+      "char": "島",
+      "grade": 3
+    },
+    {
+      "char": "州",
+      "grade": 3
+    },
+    {
+      "char": "帳",
+      "grade": 3
+    },
+    {
+      "char": "平",
+      "grade": 3
+    },
+    {
+      "char": "幸",
+      "grade": 3
+    },
+    {
+      "char": "度",
+      "grade": 3
+    },
+    {
+      "char": "庫",
+      "grade": 3
+    },
+    {
+      "char": "庭",
+      "grade": 3
+    },
+    {
+      "char": "式",
+      "grade": 3
+    },
+    {
+      "char": "役",
+      "grade": 3
+    },
+    {
+      "char": "待",
+      "grade": 3
+    },
+    {
+      "char": "急",
+      "grade": 3
+    },
+    {
+      "char": "息",
+      "grade": 3
+    },
+    {
+      "char": "悪",
+      "grade": 3
+    },
+    {
+      "char": "悲",
+      "grade": 3
+    },
+    {
+      "char": "想",
+      "grade": 3
+    },
+    {
+      "char": "意",
+      "grade": 3
+    },
+    {
+      "char": "感",
+      "grade": 3
+    },
+    {
+      "char": "所",
+      "grade": 3
+    },
+    {
+      "char": "打",
+      "grade": 3
+    },
+    {
+      "char": "投",
+      "grade": 3
+    },
+    {
+      "char": "拾",
+      "grade": 3
+    },
+    {
+      "char": "持",
+      "grade": 3
+    },
+    {
+      "char": "指",
+      "grade": 3
+    },
+    {
+      "char": "放",
+      "grade": 3
+    },
+    {
+      "char": "整",
+      "grade": 3
+    },
+    {
+      "char": "旅",
+      "grade": 3
+    },
+    {
+      "char": "族",
+      "grade": 3
+    },
+    {
+      "char": "昔",
+      "grade": 3
+    },
+    {
+      "char": "昭",
+      "grade": 3
+    },
+    {
+      "char": "暑",
+      "grade": 3
+    },
+    {
+      "char": "暗",
+      "grade": 3
+    },
+    {
+      "char": "曲",
+      "grade": 3
+    },
+    {
+      "char": "有",
+      "grade": 3
+    },
+    {
+      "char": "服",
+      "grade": 3
+    },
+    {
+      "char": "期",
+      "grade": 3
+    },
+    {
+      "char": "板",
+      "grade": 3
+    },
+    {
+      "char": "柱",
+      "grade": 3
+    },
+    {
+      "char": "根",
+      "grade": 3
+    },
+    {
+      "char": "植",
+      "grade": 3
+    },
+    {
+      "char": "業",
+      "grade": 3
+    },
+    {
+      "char": "様",
+      "grade": 3
+    },
+    {
+      "char": "横",
+      "grade": 3
+    },
+    {
+      "char": "橋",
+      "grade": 3
+    },
+    {
+      "char": "次",
+      "grade": 3
+    },
+    {
+      "char": "歯",
+      "grade": 3
+    },
+    {
+      "char": "死",
+      "grade": 3
+    },
+    {
+      "char": "氷",
+      "grade": 3
+    },
+    {
+      "char": "決",
+      "grade": 3
+    },
+    {
+      "char": "油",
+      "grade": 3
+    },
+    {
+      "char": "波",
+      "grade": 3
+    },
+    {
+      "char": "注",
+      "grade": 3
+    },
+    {
+      "char": "泳",
+      "grade": 3
+    },
+    {
+      "char": "洋",
+      "grade": 3
+    },
+    {
+      "char": "流",
+      "grade": 3
+    },
+    {
+      "char": "消",
+      "grade": 3
+    },
+    {
+      "char": "深",
+      "grade": 3
+    },
+    {
+      "char": "温",
+      "grade": 3
+    },
+    {
+      "char": "港",
+      "grade": 3
+    },
+    {
+      "char": "湖",
+      "grade": 3
+    },
+    {
+      "char": "湯",
+      "grade": 3
+    },
+    {
+      "char": "漢",
+      "grade": 3
+    },
+    {
+      "char": "炭",
+      "grade": 3
+    },
+    {
+      "char": "物",
+      "grade": 3
+    },
+    {
+      "char": "球",
+      "grade": 3
+    },
+    {
+      "char": "由",
+      "grade": 3
+    },
+    {
+      "char": "申",
+      "grade": 3
+    },
+    {
+      "char": "界",
+      "grade": 3
+    },
+    {
+      "char": "畑",
+      "grade": 3
+    },
+    {
+      "char": "病",
+      "grade": 3
+    },
+    {
+      "char": "発",
+      "grade": 3
+    },
+    {
+      "char": "登",
+      "grade": 3
+    },
+    {
+      "char": "皮",
+      "grade": 3
+    },
+    {
+      "char": "皿",
+      "grade": 3
+    },
+    {
+      "char": "相",
+      "grade": 3
+    },
+    {
+      "char": "県",
+      "grade": 3
+    },
+    {
+      "char": "真",
+      "grade": 3
+    },
+    {
+      "char": "着",
+      "grade": 3
+    },
+    {
+      "char": "短",
+      "grade": 3
+    },
+    {
+      "char": "研",
+      "grade": 3
+    },
+    {
+      "char": "礼",
+      "grade": 3
+    },
+    {
+      "char": "神",
+      "grade": 3
+    },
+    {
+      "char": "祭",
+      "grade": 3
+    },
+    {
+      "char": "福",
+      "grade": 3
+    },
+    {
+      "char": "秒",
+      "grade": 3
+    },
+    {
+      "char": "究",
+      "grade": 3
+    },
+    {
+      "char": "童",
+      "grade": 3
+    },
+    {
+      "char": "笛",
+      "grade": 3
+    },
+    {
+      "char": "第",
+      "grade": 3
+    },
+    {
+      "char": "筆",
+      "grade": 3
+    },
+    {
+      "char": "等",
+      "grade": 3
+    },
+    {
+      "char": "箱",
+      "grade": 3
+    },
+    {
+      "char": "級",
+      "grade": 3
+    },
+    {
+      "char": "終",
+      "grade": 3
+    },
+    {
+      "char": "緑",
+      "grade": 3
+    },
+    {
+      "char": "練",
+      "grade": 3
+    },
+    {
+      "char": "羊",
+      "grade": 3
+    },
+    {
+      "char": "美",
+      "grade": 3
+    },
+    {
+      "char": "習",
+      "grade": 3
+    },
+    {
+      "char": "者",
+      "grade": 3
+    },
+    {
+      "char": "育",
+      "grade": 3
+    },
+    {
+      "char": "苦",
+      "grade": 3
+    },
+    {
+      "char": "荷",
+      "grade": 3
+    },
+    {
+      "char": "落",
+      "grade": 3
+    },
+    {
+      "char": "葉",
+      "grade": 3
+    },
+    {
+      "char": "薬",
+      "grade": 3
+    },
+    {
+      "char": "血",
+      "grade": 3
+    },
+    {
+      "char": "表",
+      "grade": 3
+    },
+    {
+      "char": "詩",
+      "grade": 3
+    },
+    {
+      "char": "調",
+      "grade": 3
+    },
+    {
+      "char": "談",
+      "grade": 3
+    },
+    {
+      "char": "豆",
+      "grade": 3
+    },
+    {
+      "char": "負",
+      "grade": 3
+    },
+    {
+      "char": "起",
+      "grade": 3
+    },
+    {
+      "char": "路",
+      "grade": 3
+    },
+    {
+      "char": "身",
+      "grade": 3
+    },
+    {
+      "char": "転",
+      "grade": 3
+    },
+    {
+      "char": "軽",
+      "grade": 3
+    },
+    {
+      "char": "農",
+      "grade": 3
+    },
+    {
+      "char": "返",
+      "grade": 3
+    },
+    {
+      "char": "追",
+      "grade": 3
+    },
+    {
+      "char": "送",
+      "grade": 3
+    },
+    {
+      "char": "速",
+      "grade": 3
+    },
+    {
+      "char": "進",
+      "grade": 3
+    },
+    {
+      "char": "遊",
+      "grade": 3
+    },
+    {
+      "char": "運",
+      "grade": 3
+    },
+    {
+      "char": "部",
+      "grade": 3
+    },
+    {
+      "char": "都",
+      "grade": 3
+    },
+    {
+      "char": "配",
+      "grade": 3
+    },
+    {
+      "char": "酒",
+      "grade": 3
+    },
+    {
+      "char": "重",
+      "grade": 3
+    },
+    {
+      "char": "鉄",
+      "grade": 3
+    },
+    {
+      "char": "銀",
+      "grade": 3
+    },
+    {
+      "char": "開",
+      "grade": 3
+    },
+    {
+      "char": "院",
+      "grade": 3
+    },
+    {
+      "char": "陽",
+      "grade": 3
+    },
+    {
+      "char": "階",
+      "grade": 3
+    },
+    {
+      "char": "集",
+      "grade": 3
+    },
+    {
+      "char": "面",
+      "grade": 3
+    },
+    {
+      "char": "章",
+      "grade": 3
+    },
+    {
+      "char": "題",
+      "grade": 3
+    },
+    {
+      "char": "飲",
+      "grade": 3
+    },
+    {
+      "char": "館",
+      "grade": 3
+    },
+    {
+      "char": "駅",
+      "grade": 3
+    },
+    {
+      "char": "鼻",
+      "grade": 3
+    },
+    {
+      "char": "不",
+      "grade": 4
+    },
+    {
+      "char": "争",
+      "grade": 4
+    },
+    {
+      "char": "井",
+      "grade": 4
+    },
+    {
+      "char": "付",
+      "grade": 4
+    },
+    {
+      "char": "令",
+      "grade": 4
+    },
+    {
+      "char": "以",
+      "grade": 4
+    },
+    {
+      "char": "仲",
+      "grade": 4
+    },
+    {
+      "char": "伝",
+      "grade": 4
+    },
+    {
+      "char": "位",
+      "grade": 4
+    },
+    {
+      "char": "低",
+      "grade": 4
+    },
+    {
+      "char": "佐",
+      "grade": 4
+    },
+    {
+      "char": "例",
+      "grade": 4
+    },
+    {
+      "char": "便",
+      "grade": 4
+    },
+    {
+      "char": "信",
+      "grade": 4
+    },
+    {
+      "char": "倉",
+      "grade": 4
+    },
+    {
+      "char": "候",
+      "grade": 4
+    },
+    {
+      "char": "借",
+      "grade": 4
+    },
+    {
+      "char": "健",
+      "grade": 4
+    },
+    {
+      "char": "側",
+      "grade": 4
+    },
+    {
+      "char": "働",
+      "grade": 4
+    },
+    {
+      "char": "億",
+      "grade": 4
+    },
+    {
+      "char": "兆",
+      "grade": 4
+    },
+    {
+      "char": "児",
+      "grade": 4
+    },
+    {
+      "char": "共",
+      "grade": 4
+    },
+    {
+      "char": "兵",
+      "grade": 4
+    },
+    {
+      "char": "典",
+      "grade": 4
+    },
+    {
+      "char": "最",
+      "grade": 4
+    },
+    {
+      "char": "冷",
+      "grade": 4
+    },
+    {
+      "char": "初",
+      "grade": 4
+    },
+    {
+      "char": "別",
+      "grade": 4
+    },
+    {
+      "char": "利",
+      "grade": 4
+    },
+    {
+      "char": "刷",
+      "grade": 4
+    },
+    {
+      "char": "副",
+      "grade": 4
+    },
+    {
+      "char": "功",
+      "grade": 4
+    },
+    {
+      "char": "加",
+      "grade": 4
+    },
+    {
+      "char": "努",
+      "grade": 4
+    },
+    {
+      "char": "労",
+      "grade": 4
+    },
+    {
+      "char": "勇",
+      "grade": 4
+    },
+    {
+      "char": "包",
+      "grade": 4
+    },
+    {
+      "char": "卒",
+      "grade": 4
+    },
+    {
+      "char": "協",
+      "grade": 4
+    },
+    {
+      "char": "単",
+      "grade": 4
+    },
+    {
+      "char": "博",
+      "grade": 4
+    },
+    {
+      "char": "印",
+      "grade": 4
+    },
+    {
+      "char": "参",
+      "grade": 4
+    },
+    {
+      "char": "司",
+      "grade": 4
+    },
+    {
+      "char": "各",
+      "grade": 4
+    },
+    {
+      "char": "周",
+      "grade": 4
+    },
+    {
+      "char": "唱",
+      "grade": 4
+    },
+    {
+      "char": "器",
+      "grade": 4
+    },
+    {
+      "char": "固",
+      "grade": 4
+    },
+    {
+      "char": "城",
+      "grade": 4
+    },
+    {
+      "char": "埼",
+      "grade": 4
+    },
+    {
+      "char": "塩",
+      "grade": 4
+    },
+    {
+      "char": "変",
+      "grade": 4
+    },
+    {
+      "char": "夫",
+      "grade": 4
+    },
+    {
+      "char": "失",
+      "grade": 4
+    },
+    {
+      "char": "奈",
+      "grade": 4
+    },
+    {
+      "char": "好",
+      "grade": 4
+    },
+    {
+      "char": "媛",
+      "grade": 4
+    },
+    {
+      "char": "季",
+      "grade": 4
+    },
+    {
+      "char": "孫",
+      "grade": 4
+    },
+    {
+      "char": "完",
+      "grade": 4
+    },
+    {
+      "char": "官",
+      "grade": 4
+    },
+    {
+      "char": "害",
+      "grade": 4
+    },
+    {
+      "char": "富",
+      "grade": 4
+    },
+    {
+      "char": "察",
+      "grade": 4
+    },
+    {
+      "char": "岐",
+      "grade": 4
+    },
+    {
+      "char": "岡",
+      "grade": 4
+    },
+    {
+      "char": "崎",
+      "grade": 4
+    },
+    {
+      "char": "巣",
+      "grade": 4
+    },
+    {
+      "char": "差",
+      "grade": 4
+    },
+    {
+      "char": "希",
+      "grade": 4
+    },
+    {
+      "char": "席",
+      "grade": 4
+    },
+    {
+      "char": "帯",
+      "grade": 4
+    },
+    {
+      "char": "底",
+      "grade": 4
+    },
+    {
+      "char": "府",
+      "grade": 4
+    },
+    {
+      "char": "康",
+      "grade": 4
+    },
+    {
+      "char": "建",
+      "grade": 4
+    },
+    {
+      "char": "径",
+      "grade": 4
+    },
+    {
+      "char": "徒",
+      "grade": 4
+    },
+    {
+      "char": "徳",
+      "grade": 4
+    },
+    {
+      "char": "必",
+      "grade": 4
+    },
+    {
+      "char": "念",
+      "grade": 4
+    },
+    {
+      "char": "愛",
+      "grade": 4
+    },
+    {
+      "char": "成",
+      "grade": 4
+    },
+    {
+      "char": "戦",
+      "grade": 4
+    },
+    {
+      "char": "折",
+      "grade": 4
+    },
+    {
+      "char": "挙",
+      "grade": 4
+    },
+    {
+      "char": "改",
+      "grade": 4
+    },
+    {
+      "char": "敗",
+      "grade": 4
+    },
+    {
+      "char": "散",
+      "grade": 4
+    },
+    {
+      "char": "料",
+      "grade": 4
+    },
+    {
+      "char": "旗",
+      "grade": 4
+    },
+    {
+      "char": "昨",
+      "grade": 4
+    },
+    {
+      "char": "景",
+      "grade": 4
+    },
+    {
+      "char": "望",
+      "grade": 4
+    },
+    {
+      "char": "未",
+      "grade": 4
+    },
+    {
+      "char": "末",
+      "grade": 4
+    },
+    {
+      "char": "札",
+      "grade": 4
+    },
+    {
+      "char": "材",
+      "grade": 4
+    },
+    {
+      "char": "束",
+      "grade": 4
+    },
+    {
+      "char": "松",
+      "grade": 4
+    },
+    {
+      "char": "果",
+      "grade": 4
+    },
+    {
+      "char": "栃",
+      "grade": 4
+    },
+    {
+      "char": "栄",
+      "grade": 4
+    },
+    {
+      "char": "案",
+      "grade": 4
+    },
+    {
+      "char": "梅",
+      "grade": 4
+    },
+    {
+      "char": "梨",
+      "grade": 4
+    },
+    {
+      "char": "械",
+      "grade": 4
+    },
+    {
+      "char": "極",
+      "grade": 4
+    },
+    {
+      "char": "標",
+      "grade": 4
+    },
+    {
+      "char": "機",
+      "grade": 4
+    },
+    {
+      "char": "欠",
+      "grade": 4
+    },
+    {
+      "char": "残",
+      "grade": 4
+    },
+    {
+      "char": "氏",
+      "grade": 4
+    },
+    {
+      "char": "民",
+      "grade": 4
+    },
+    {
+      "char": "求",
+      "grade": 4
+    },
+    {
+      "char": "沖",
+      "grade": 4
+    },
+    {
+      "char": "治",
+      "grade": 4
+    },
+    {
+      "char": "法",
+      "grade": 4
+    },
+    {
+      "char": "泣",
+      "grade": 4
+    },
+    {
+      "char": "浅",
+      "grade": 4
+    },
+    {
+      "char": "浴",
+      "grade": 4
+    },
+    {
+      "char": "清",
+      "grade": 4
+    },
+    {
+      "char": "満",
+      "grade": 4
+    },
+    {
+      "char": "滋",
+      "grade": 4
+    },
+    {
+      "char": "漁",
+      "grade": 4
+    },
+    {
+      "char": "潟",
+      "grade": 4
+    },
+    {
+      "char": "灯",
+      "grade": 4
+    },
+    {
+      "char": "無",
+      "grade": 4
+    },
+    {
+      "char": "然",
+      "grade": 4
+    },
+    {
+      "char": "焼",
+      "grade": 4
+    },
+    {
+      "char": "照",
+      "grade": 4
+    },
+    {
+      "char": "熊",
+      "grade": 4
+    },
+    {
+      "char": "熱",
+      "grade": 4
+    },
+    {
+      "char": "牧",
+      "grade": 4
+    },
+    {
+      "char": "特",
+      "grade": 4
+    },
+    {
+      "char": "産",
+      "grade": 4
+    },
+    {
+      "char": "的",
+      "grade": 4
+    },
+    {
+      "char": "省",
+      "grade": 4
+    },
+    {
+      "char": "祝",
+      "grade": 4
+    },
+    {
+      "char": "票",
+      "grade": 4
+    },
+    {
+      "char": "種",
+      "grade": 4
+    },
+    {
+      "char": "積",
+      "grade": 4
+    },
+    {
+      "char": "競",
+      "grade": 4
+    },
+    {
+      "char": "笑",
+      "grade": 4
+    },
+    {
+      "char": "節",
+      "grade": 4
+    },
+    {
+      "char": "管",
+      "grade": 4
+    },
+    {
+      "char": "約",
+      "grade": 4
+    },
+    {
+      "char": "結",
+      "grade": 4
+    },
+    {
+      "char": "給",
+      "grade": 4
+    },
+    {
+      "char": "続",
+      "grade": 4
+    },
+    {
+      "char": "縄",
+      "grade": 4
+    },
+    {
+      "char": "置",
+      "grade": 4
+    },
+    {
+      "char": "群",
+      "grade": 4
+    },
+    {
+      "char": "老",
+      "grade": 4
+    },
+    {
+      "char": "臣",
+      "grade": 4
+    },
+    {
+      "char": "良",
+      "grade": 4
+    },
+    {
+      "char": "芸",
+      "grade": 4
+    },
+    {
+      "char": "芽",
+      "grade": 4
+    },
+    {
+      "char": "英",
+      "grade": 4
+    },
+    {
+      "char": "茨",
+      "grade": 4
+    },
+    {
+      "char": "菜",
+      "grade": 4
+    },
+    {
+      "char": "街",
+      "grade": 4
+    },
+    {
+      "char": "衣",
+      "grade": 4
+    },
+    {
+      "char": "要",
+      "grade": 4
+    },
+    {
+      "char": "覚",
+      "grade": 4
+    },
+    {
+      "char": "観",
+      "grade": 4
+    },
+    {
+      "char": "訓",
+      "grade": 4
+    },
+    {
+      "char": "試",
+      "grade": 4
+    },
+    {
+      "char": "説",
+      "grade": 4
+    },
+    {
+      "char": "課",
+      "grade": 4
+    },
+    {
+      "char": "議",
+      "grade": 4
+    },
+    {
+      "char": "貨",
+      "grade": 4
+    },
+    {
+      "char": "賀",
+      "grade": 4
+    },
+    {
+      "char": "軍",
+      "grade": 4
+    },
+    {
+      "char": "輪",
+      "grade": 4
+    },
+    {
+      "char": "辞",
+      "grade": 4
+    },
+    {
+      "char": "辺",
+      "grade": 4
+    },
+    {
+      "char": "連",
+      "grade": 4
+    },
+    {
+      "char": "達",
+      "grade": 4
+    },
+    {
+      "char": "選",
+      "grade": 4
+    },
+    {
+      "char": "郡",
+      "grade": 4
+    },
+    {
+      "char": "量",
+      "grade": 4
+    },
+    {
+      "char": "録",
+      "grade": 4
+    },
+    {
+      "char": "鏡",
+      "grade": 4
+    },
+    {
+      "char": "関",
+      "grade": 4
+    },
+    {
+      "char": "阜",
+      "grade": 4
+    },
+    {
+      "char": "阪",
+      "grade": 4
+    },
+    {
+      "char": "陸",
+      "grade": 4
+    },
+    {
+      "char": "隊",
+      "grade": 4
+    },
+    {
+      "char": "静",
+      "grade": 4
+    },
+    {
+      "char": "順",
+      "grade": 4
+    },
+    {
+      "char": "願",
+      "grade": 4
+    },
+    {
+      "char": "類",
+      "grade": 4
+    },
+    {
+      "char": "飛",
+      "grade": 4
+    },
+    {
+      "char": "飯",
+      "grade": 4
+    },
+    {
+      "char": "養",
+      "grade": 4
+    },
+    {
+      "char": "香",
+      "grade": 4
+    },
+    {
+      "char": "験",
+      "grade": 4
+    },
+    {
+      "char": "鹿",
+      "grade": 4
+    },
+    {
+      "char": "久",
+      "grade": 5
+    },
+    {
+      "char": "仏",
+      "grade": 5
+    },
+    {
+      "char": "仮",
+      "grade": 5
+    },
+    {
+      "char": "件",
+      "grade": 5
+    },
+    {
+      "char": "任",
+      "grade": 5
+    },
+    {
+      "char": "似",
+      "grade": 5
+    },
+    {
+      "char": "余",
+      "grade": 5
+    },
+    {
+      "char": "価",
+      "grade": 5
+    },
+    {
+      "char": "保",
+      "grade": 5
+    },
+    {
+      "char": "修",
+      "grade": 5
+    },
+    {
+      "char": "個",
+      "grade": 5
+    },
+    {
+      "char": "停",
+      "grade": 5
+    },
+    {
+      "char": "備",
+      "grade": 5
+    },
+    {
+      "char": "像",
+      "grade": 5
+    },
+    {
+      "char": "再",
+      "grade": 5
+    },
+    {
+      "char": "刊",
+      "grade": 5
+    },
+    {
+      "char": "判",
+      "grade": 5
+    },
+    {
+      "char": "制",
+      "grade": 5
+    },
+    {
+      "char": "則",
+      "grade": 5
+    },
+    {
+      "char": "効",
+      "grade": 5
+    },
+    {
+      "char": "務",
+      "grade": 5
+    },
+    {
+      "char": "勢",
+      "grade": 5
+    },
+    {
+      "char": "厚",
+      "grade": 5
+    },
+    {
+      "char": "句",
+      "grade": 5
+    },
+    {
+      "char": "可",
+      "grade": 5
+    },
+    {
+      "char": "史",
+      "grade": 5
+    },
+    {
+      "char": "告",
+      "grade": 5
+    },
+    {
+      "char": "喜",
+      "grade": 5
+    },
+    {
+      "char": "営",
+      "grade": 5
+    },
+    {
+      "char": "因",
+      "grade": 5
+    },
+    {
+      "char": "団",
+      "grade": 5
+    },
+    {
+      "char": "囲",
+      "grade": 5
+    },
+    {
+      "char": "圧",
+      "grade": 5
+    },
+    {
+      "char": "在",
+      "grade": 5
+    },
+    {
+      "char": "均",
+      "grade": 5
+    },
+    {
+      "char": "型",
+      "grade": 5
+    },
+    {
+      "char": "基",
+      "grade": 5
+    },
+    {
+      "char": "堂",
+      "grade": 5
+    },
+    {
+      "char": "報",
+      "grade": 5
+    },
+    {
+      "char": "境",
+      "grade": 5
+    },
+    {
+      "char": "墓",
+      "grade": 5
+    },
+    {
+      "char": "増",
+      "grade": 5
+    },
+    {
+      "char": "士",
+      "grade": 5
+    },
+    {
+      "char": "夢",
+      "grade": 5
+    },
+    {
+      "char": "妻",
+      "grade": 5
+    },
+    {
+      "char": "婦",
+      "grade": 5
+    },
+    {
+      "char": "容",
+      "grade": 5
+    },
+    {
+      "char": "寄",
+      "grade": 5
+    },
+    {
+      "char": "導",
+      "grade": 5
+    },
+    {
+      "char": "居",
+      "grade": 5
+    },
+    {
+      "char": "属",
+      "grade": 5
+    },
+    {
+      "char": "布",
+      "grade": 5
+    },
+    {
+      "char": "師",
+      "grade": 5
+    },
+    {
+      "char": "常",
+      "grade": 5
+    },
+    {
+      "char": "幹",
+      "grade": 5
+    },
+    {
+      "char": "序",
+      "grade": 5
+    },
+    {
+      "char": "弁",
+      "grade": 5
+    },
+    {
+      "char": "張",
+      "grade": 5
+    },
+    {
+      "char": "往",
+      "grade": 5
+    },
+    {
+      "char": "得",
+      "grade": 5
+    },
+    {
+      "char": "復",
+      "grade": 5
+    },
+    {
+      "char": "志",
+      "grade": 5
+    },
+    {
+      "char": "応",
+      "grade": 5
+    },
+    {
+      "char": "快",
+      "grade": 5
+    },
+    {
+      "char": "性",
+      "grade": 5
+    },
+    {
+      "char": "情",
+      "grade": 5
+    },
+    {
+      "char": "態",
+      "grade": 5
+    },
+    {
+      "char": "慣",
+      "grade": 5
+    },
+    {
+      "char": "技",
+      "grade": 5
+    },
+    {
+      "char": "招",
+      "grade": 5
+    },
+    {
+      "char": "授",
+      "grade": 5
+    },
+    {
+      "char": "採",
+      "grade": 5
+    },
+    {
+      "char": "接",
+      "grade": 5
+    },
+    {
+      "char": "提",
+      "grade": 5
+    },
+    {
+      "char": "損",
+      "grade": 5
+    },
+    {
+      "char": "支",
+      "grade": 5
+    },
+    {
+      "char": "政",
+      "grade": 5
+    },
+    {
+      "char": "故",
+      "grade": 5
+    },
+    {
+      "char": "救",
+      "grade": 5
+    },
+    {
+      "char": "断",
+      "grade": 5
+    },
+    {
+      "char": "旧",
+      "grade": 5
+    },
+    {
+      "char": "易",
+      "grade": 5
+    },
+    {
+      "char": "暴",
+      "grade": 5
+    },
+    {
+      "char": "条",
+      "grade": 5
+    },
+    {
+      "char": "枝",
+      "grade": 5
+    },
+    {
+      "char": "査",
+      "grade": 5
+    },
+    {
+      "char": "格",
+      "grade": 5
+    },
+    {
+      "char": "桜",
+      "grade": 5
+    },
+    {
+      "char": "検",
+      "grade": 5
+    },
+    {
+      "char": "構",
+      "grade": 5
+    },
+    {
+      "char": "武",
+      "grade": 5
+    },
+    {
+      "char": "歴",
+      "grade": 5
+    },
+    {
+      "char": "殺",
+      "grade": 5
+    },
+    {
+      "char": "毒",
+      "grade": 5
+    },
+    {
+      "char": "比",
+      "grade": 5
+    },
+    {
+      "char": "永",
+      "grade": 5
+    },
+    {
+      "char": "河",
+      "grade": 5
+    },
+    {
+      "char": "液",
+      "grade": 5
+    },
+    {
+      "char": "混",
+      "grade": 5
+    },
+    {
+      "char": "減",
+      "grade": 5
+    },
+    {
+      "char": "測",
+      "grade": 5
+    },
+    {
+      "char": "準",
+      "grade": 5
+    },
+    {
+      "char": "演",
+      "grade": 5
+    },
+    {
+      "char": "潔",
+      "grade": 5
+    },
+    {
+      "char": "災",
+      "grade": 5
+    },
+    {
+      "char": "燃",
+      "grade": 5
+    },
+    {
+      "char": "版",
+      "grade": 5
+    },
+    {
+      "char": "犯",
+      "grade": 5
+    },
+    {
+      "char": "状",
+      "grade": 5
+    },
+    {
+      "char": "独",
+      "grade": 5
+    },
+    {
+      "char": "率",
+      "grade": 5
+    },
+    {
+      "char": "現",
+      "grade": 5
+    },
+    {
+      "char": "留",
+      "grade": 5
+    },
+    {
+      "char": "略",
+      "grade": 5
+    },
+    {
+      "char": "益",
+      "grade": 5
+    },
+    {
+      "char": "眼",
+      "grade": 5
+    },
+    {
+      "char": "破",
+      "grade": 5
+    },
+    {
+      "char": "確",
+      "grade": 5
+    },
+    {
+      "char": "示",
+      "grade": 5
+    },
+    {
+      "char": "祖",
+      "grade": 5
+    },
+    {
+      "char": "禁",
+      "grade": 5
+    },
+    {
+      "char": "移",
+      "grade": 5
+    },
+    {
+      "char": "程",
+      "grade": 5
+    },
+    {
+      "char": "税",
+      "grade": 5
+    },
+    {
+      "char": "築",
+      "grade": 5
+    },
+    {
+      "char": "粉",
+      "grade": 5
+    },
+    {
+      "char": "精",
+      "grade": 5
+    },
+    {
+      "char": "紀",
+      "grade": 5
+    },
+    {
+      "char": "素",
+      "grade": 5
+    },
+    {
+      "char": "経",
+      "grade": 5
+    },
+    {
+      "char": "統",
+      "grade": 5
+    },
+    {
+      "char": "絶",
+      "grade": 5
+    },
+    {
+      "char": "綿",
+      "grade": 5
+    },
+    {
+      "char": "総",
+      "grade": 5
+    },
+    {
+      "char": "編",
+      "grade": 5
+    },
+    {
+      "char": "績",
+      "grade": 5
+    },
+    {
+      "char": "織",
+      "grade": 5
+    },
+    {
+      "char": "罪",
+      "grade": 5
+    },
+    {
+      "char": "義",
+      "grade": 5
+    },
+    {
+      "char": "耕",
+      "grade": 5
+    },
+    {
+      "char": "職",
+      "grade": 5
+    },
+    {
+      "char": "肥",
+      "grade": 5
+    },
+    {
+      "char": "能",
+      "grade": 5
+    },
+    {
+      "char": "脈",
+      "grade": 5
+    },
+    {
+      "char": "興",
+      "grade": 5
+    },
+    {
+      "char": "舎",
+      "grade": 5
+    },
+    {
+      "char": "航",
+      "grade": 5
+    },
+    {
+      "char": "術",
+      "grade": 5
+    },
+    {
+      "char": "衛",
+      "grade": 5
+    },
+    {
+      "char": "製",
+      "grade": 5
+    },
+    {
+      "char": "複",
+      "grade": 5
+    },
+    {
+      "char": "規",
+      "grade": 5
+    },
+    {
+      "char": "解",
+      "grade": 5
+    },
+    {
+      "char": "設",
+      "grade": 5
+    },
+    {
+      "char": "許",
+      "grade": 5
+    },
+    {
+      "char": "証",
+      "grade": 5
+    },
+    {
+      "char": "評",
+      "grade": 5
+    },
+    {
+      "char": "講",
+      "grade": 5
+    },
+    {
+      "char": "謝",
+      "grade": 5
+    },
+    {
+      "char": "識",
+      "grade": 5
+    },
+    {
+      "char": "護",
+      "grade": 5
+    },
+    {
+      "char": "豊",
+      "grade": 5
+    },
+    {
+      "char": "象",
+      "grade": 5
+    },
+    {
+      "char": "財",
+      "grade": 5
+    },
+    {
+      "char": "貧",
+      "grade": 5
+    },
+    {
+      "char": "責",
+      "grade": 5
+    },
+    {
+      "char": "貯",
+      "grade": 5
+    },
+    {
+      "char": "貸",
+      "grade": 5
+    },
+    {
+      "char": "費",
+      "grade": 5
+    },
+    {
+      "char": "貿",
+      "grade": 5
+    },
+    {
+      "char": "資",
+      "grade": 5
+    },
+    {
+      "char": "賛",
+      "grade": 5
+    },
+    {
+      "char": "賞",
+      "grade": 5
+    },
+    {
+      "char": "質",
+      "grade": 5
+    },
+    {
+      "char": "輸",
+      "grade": 5
+    },
+    {
+      "char": "述",
+      "grade": 5
+    },
+    {
+      "char": "迷",
+      "grade": 5
+    },
+    {
+      "char": "逆",
+      "grade": 5
+    },
+    {
+      "char": "造",
+      "grade": 5
+    },
+    {
+      "char": "過",
+      "grade": 5
+    },
+    {
+      "char": "適",
+      "grade": 5
+    },
+    {
+      "char": "酸",
+      "grade": 5
+    },
+    {
+      "char": "鉱",
+      "grade": 5
+    },
+    {
+      "char": "銅",
+      "grade": 5
+    },
+    {
+      "char": "防",
+      "grade": 5
+    },
+    {
+      "char": "限",
+      "grade": 5
+    },
+    {
+      "char": "険",
+      "grade": 5
+    },
+    {
+      "char": "際",
+      "grade": 5
+    },
+    {
+      "char": "雑",
+      "grade": 5
+    },
+    {
+      "char": "非",
+      "grade": 5
+    },
+    {
+      "char": "領",
+      "grade": 5
+    },
+    {
+      "char": "額",
+      "grade": 5
+    },
+    {
+      "char": "飼",
+      "grade": 5
+    },
+    {
+      "char": "並",
+      "grade": 6
+    },
+    {
+      "char": "乱",
+      "grade": 6
+    },
+    {
+      "char": "乳",
+      "grade": 6
+    },
+    {
+      "char": "亡",
+      "grade": 6
+    },
+    {
+      "char": "仁",
+      "grade": 6
+    },
+    {
+      "char": "供",
+      "grade": 6
+    },
+    {
+      "char": "俳",
+      "grade": 6
+    },
+    {
+      "char": "俵",
+      "grade": 6
+    },
+    {
+      "char": "値",
+      "grade": 6
+    },
+    {
+      "char": "傷",
+      "grade": 6
+    },
+    {
+      "char": "優",
+      "grade": 6
+    },
+    {
+      "char": "党",
+      "grade": 6
+    },
+    {
+      "char": "冊",
+      "grade": 6
+    },
+    {
+      "char": "処",
+      "grade": 6
+    },
+    {
+      "char": "券",
+      "grade": 6
+    },
+    {
+      "char": "刻",
+      "grade": 6
+    },
+    {
+      "char": "割",
+      "grade": 6
+    },
+    {
+      "char": "創",
+      "grade": 6
+    },
+    {
+      "char": "劇",
+      "grade": 6
+    },
+    {
+      "char": "勤",
+      "grade": 6
+    },
+    {
+      "char": "危",
+      "grade": 6
+    },
+    {
+      "char": "卵",
+      "grade": 6
+    },
+    {
+      "char": "厳",
+      "grade": 6
+    },
+    {
+      "char": "収",
+      "grade": 6
+    },
+    {
+      "char": "后",
+      "grade": 6
+    },
+    {
+      "char": "否",
+      "grade": 6
+    },
+    {
+      "char": "吸",
+      "grade": 6
+    },
+    {
+      "char": "呼",
+      "grade": 6
+    },
+    {
+      "char": "善",
+      "grade": 6
+    },
+    {
+      "char": "困",
+      "grade": 6
+    },
+    {
+      "char": "垂",
+      "grade": 6
+    },
+    {
+      "char": "域",
+      "grade": 6
+    },
+    {
+      "char": "奏",
+      "grade": 6
+    },
+    {
+      "char": "奮",
+      "grade": 6
+    },
+    {
+      "char": "姿",
+      "grade": 6
+    },
+    {
+      "char": "存",
+      "grade": 6
+    },
+    {
+      "char": "孝",
+      "grade": 6
+    },
+    {
+      "char": "宅",
+      "grade": 6
+    },
+    {
+      "char": "宇",
+      "grade": 6
+    },
+    {
+      "char": "宗",
+      "grade": 6
+    },
+    {
+      "char": "宙",
+      "grade": 6
+    },
+    {
+      "char": "宝",
+      "grade": 6
+    },
+    {
+      "char": "宣",
+      "grade": 6
+    },
+    {
+      "char": "密",
+      "grade": 6
+    },
+    {
+      "char": "寸",
+      "grade": 6
+    },
+    {
+      "char": "専",
+      "grade": 6
+    },
+    {
+      "char": "将",
+      "grade": 6
+    },
+    {
+      "char": "射",
+      "grade": 6
+    },
+    {
+      "char": "尊",
+      "grade": 6
+    },
+    {
+      "char": "就",
+      "grade": 6
+    },
+    {
+      "char": "尺",
+      "grade": 6
+    },
+    {
+      "char": "届",
+      "grade": 6
+    },
+    {
+      "char": "展",
+      "grade": 6
+    },
+    {
+      "char": "層",
+      "grade": 6
+    },
+    {
+      "char": "己",
+      "grade": 6
+    },
+    {
+      "char": "巻",
+      "grade": 6
+    },
+    {
+      "char": "幕",
+      "grade": 6
+    },
+    {
+      "char": "干",
+      "grade": 6
+    },
+    {
+      "char": "幼",
+      "grade": 6
+    },
+    {
+      "char": "庁",
+      "grade": 6
+    },
+    {
+      "char": "座",
+      "grade": 6
+    },
+    {
+      "char": "延",
+      "grade": 6
+    },
+    {
+      "char": "律",
+      "grade": 6
+    },
+    {
+      "char": "従",
+      "grade": 6
+    },
+    {
+      "char": "忘",
+      "grade": 6
+    },
+    {
+      "char": "忠",
+      "grade": 6
+    },
+    {
+      "char": "恩",
+      "grade": 6
+    },
+    {
+      "char": "憲",
+      "grade": 6
+    },
+    {
+      "char": "我",
+      "grade": 6
+    },
+    {
+      "char": "批",
+      "grade": 6
+    },
+    {
+      "char": "承",
+      "grade": 6
+    },
+    {
+      "char": "担",
+      "grade": 6
+    },
+    {
+      "char": "拝",
+      "grade": 6
+    },
+    {
+      "char": "拡",
+      "grade": 6
+    },
+    {
+      "char": "捨",
+      "grade": 6
+    },
+    {
+      "char": "探",
+      "grade": 6
+    },
+    {
+      "char": "推",
+      "grade": 6
+    },
+    {
+      "char": "揮",
+      "grade": 6
+    },
+    {
+      "char": "操",
+      "grade": 6
+    },
+    {
+      "char": "敬",
+      "grade": 6
+    },
+    {
+      "char": "敵",
+      "grade": 6
+    },
+    {
+      "char": "映",
+      "grade": 6
+    },
+    {
+      "char": "晩",
+      "grade": 6
+    },
+    {
+      "char": "暖",
+      "grade": 6
+    },
+    {
+      "char": "暮",
+      "grade": 6
+    },
+    {
+      "char": "朗",
+      "grade": 6
+    },
+    {
+      "char": "机",
+      "grade": 6
+    },
+    {
+      "char": "枚",
+      "grade": 6
+    },
+    {
+      "char": "染",
+      "grade": 6
+    },
+    {
+      "char": "株",
+      "grade": 6
+    },
+    {
+      "char": "棒",
+      "grade": 6
+    },
+    {
+      "char": "模",
+      "grade": 6
+    },
+    {
+      "char": "権",
+      "grade": 6
+    },
+    {
+      "char": "樹",
+      "grade": 6
+    },
+    {
+      "char": "欲",
+      "grade": 6
+    },
+    {
+      "char": "段",
+      "grade": 6
+    },
+    {
+      "char": "沿",
+      "grade": 6
+    },
+    {
+      "char": "泉",
+      "grade": 6
+    },
+    {
+      "char": "洗",
+      "grade": 6
+    },
+    {
+      "char": "派",
+      "grade": 6
+    },
+    {
+      "char": "済",
+      "grade": 6
+    },
+    {
+      "char": "源",
+      "grade": 6
+    },
+    {
+      "char": "潮",
+      "grade": 6
+    },
+    {
+      "char": "激",
+      "grade": 6
+    },
+    {
+      "char": "灰",
+      "grade": 6
+    },
+    {
+      "char": "蒸",
+      "grade": 6
+    },
+    {
+      "char": "熟",
+      "grade": 6
+    },
+    {
+      "char": "片",
+      "grade": 6
+    },
+    {
+      "char": "班",
+      "grade": 6
+    },
+    {
+      "char": "異",
+      "grade": 6
+    },
+    {
+      "char": "疑",
+      "grade": 6
+    },
+    {
+      "char": "痛",
+      "grade": 6
+    },
+    {
+      "char": "皇",
+      "grade": 6
+    },
+    {
+      "char": "盛",
+      "grade": 6
+    },
+    {
+      "char": "盟",
+      "grade": 6
+    },
+    {
+      "char": "看",
+      "grade": 6
+    },
+    {
+      "char": "砂",
+      "grade": 6
+    },
+    {
+      "char": "磁",
+      "grade": 6
+    },
+    {
+      "char": "視",
+      "grade": 6
+    },
+    {
+      "char": "私",
+      "grade": 6
+    },
+    {
+      "char": "秘",
+      "grade": 6
+    },
+    {
+      "char": "穀",
+      "grade": 6
+    },
+    {
+      "char": "穴",
+      "grade": 6
+    },
+    {
+      "char": "窓",
+      "grade": 6
+    },
+    {
+      "char": "筋",
+      "grade": 6
+    },
+    {
+      "char": "策",
+      "grade": 6
+    },
+    {
+      "char": "簡",
+      "grade": 6
+    },
+    {
+      "char": "糖",
+      "grade": 6
+    },
+    {
+      "char": "系",
+      "grade": 6
+    },
+    {
+      "char": "紅",
+      "grade": 6
+    },
+    {
+      "char": "納",
+      "grade": 6
+    },
+    {
+      "char": "純",
+      "grade": 6
+    },
+    {
+      "char": "絹",
+      "grade": 6
+    },
+    {
+      "char": "縦",
+      "grade": 6
+    },
+    {
+      "char": "縮",
+      "grade": 6
+    },
+    {
+      "char": "署",
+      "grade": 6
+    },
+    {
+      "char": "翌",
+      "grade": 6
+    },
+    {
+      "char": "聖",
+      "grade": 6
+    },
+    {
+      "char": "肺",
+      "grade": 6
+    },
+    {
+      "char": "胃",
+      "grade": 6
+    },
+    {
+      "char": "背",
+      "grade": 6
+    },
+    {
+      "char": "胸",
+      "grade": 6
+    },
+    {
+      "char": "脳",
+      "grade": 6
+    },
+    {
+      "char": "腸",
+      "grade": 6
+    },
+    {
+      "char": "腹",
+      "grade": 6
+    },
+    {
+      "char": "臓",
+      "grade": 6
+    },
+    {
+      "char": "臨",
+      "grade": 6
+    },
+    {
+      "char": "至",
+      "grade": 6
+    },
+    {
+      "char": "舌",
+      "grade": 6
+    },
+    {
+      "char": "若",
+      "grade": 6
+    },
+    {
+      "char": "著",
+      "grade": 6
+    },
+    {
+      "char": "蔵",
+      "grade": 6
+    },
+    {
+      "char": "蚕",
+      "grade": 6
+    },
+    {
+      "char": "衆",
+      "grade": 6
+    },
+    {
+      "char": "裁",
+      "grade": 6
+    },
+    {
+      "char": "装",
+      "grade": 6
+    },
+    {
+      "char": "裏",
+      "grade": 6
+    },
+    {
+      "char": "補",
+      "grade": 6
+    },
+    {
+      "char": "覧",
+      "grade": 6
+    },
+    {
+      "char": "討",
+      "grade": 6
+    },
+    {
+      "char": "訪",
+      "grade": 6
+    },
+    {
+      "char": "訳",
+      "grade": 6
+    },
+    {
+      "char": "詞",
+      "grade": 6
+    },
+    {
+      "char": "誠",
+      "grade": 6
+    },
+    {
+      "char": "誌",
+      "grade": 6
+    },
+    {
+      "char": "認",
+      "grade": 6
+    },
+    {
+      "char": "誕",
+      "grade": 6
+    },
+    {
+      "char": "誤",
+      "grade": 6
+    },
+    {
+      "char": "論",
+      "grade": 6
+    },
+    {
+      "char": "諸",
+      "grade": 6
+    },
+    {
+      "char": "警",
+      "grade": 6
+    },
+    {
+      "char": "貴",
+      "grade": 6
+    },
+    {
+      "char": "賃",
+      "grade": 6
+    },
+    {
+      "char": "退",
+      "grade": 6
+    },
+    {
+      "char": "遺",
+      "grade": 6
+    },
+    {
+      "char": "郵",
+      "grade": 6
+    },
+    {
+      "char": "郷",
+      "grade": 6
+    },
+    {
+      "char": "針",
+      "grade": 6
+    },
+    {
+      "char": "銭",
+      "grade": 6
+    },
+    {
+      "char": "鋼",
+      "grade": 6
+    },
+    {
+      "char": "閉",
+      "grade": 6
+    },
+    {
+      "char": "閣",
+      "grade": 6
+    },
+    {
+      "char": "降",
+      "grade": 6
+    },
+    {
+      "char": "陛",
+      "grade": 6
+    },
+    {
+      "char": "除",
+      "grade": 6
+    },
+    {
+      "char": "障",
+      "grade": 6
+    },
+    {
+      "char": "難",
+      "grade": 6
+    },
+    {
+      "char": "革",
+      "grade": 6
+    },
+    {
+      "char": "頂",
+      "grade": 6
+    },
+    {
+      "char": "預",
+      "grade": 6
+    },
+    {
+      "char": "骨",
+      "grade": 6
+    },
+    {
+      "char": "丈",
+      "grade": "S"
+    },
+    {
+      "char": "与",
+      "grade": "S"
+    },
+    {
+      "char": "且",
+      "grade": "S"
+    },
+    {
+      "char": "丘",
+      "grade": "S"
+    },
+    {
+      "char": "丙",
+      "grade": "S"
+    },
+    {
+      "char": "串",
+      "grade": "S"
+    },
+    {
+      "char": "丹",
+      "grade": "S"
+    },
+    {
+      "char": "丼",
+      "grade": "S"
+    },
+    {
+      "char": "乏",
+      "grade": "S"
+    },
+    {
+      "char": "乙",
+      "grade": "S"
+    },
+    {
+      "char": "乞",
+      "grade": "S"
+    },
+    {
+      "char": "乾",
+      "grade": "S"
+    },
+    {
+      "char": "亀",
+      "grade": "S"
+    },
+    {
+      "char": "了",
+      "grade": "S"
+    },
+    {
+      "char": "互",
+      "grade": "S"
+    },
+    {
+      "char": "亜",
+      "grade": "S"
+    },
+    {
+      "char": "享",
+      "grade": "S"
+    },
+    {
+      "char": "亭",
+      "grade": "S"
+    },
+    {
+      "char": "介",
+      "grade": "S"
+    },
+    {
+      "char": "仙",
+      "grade": "S"
+    },
+    {
+      "char": "仰",
+      "grade": "S"
+    },
+    {
+      "char": "企",
+      "grade": "S"
+    },
+    {
+      "char": "伎",
+      "grade": "S"
+    },
+    {
+      "char": "伏",
+      "grade": "S"
+    },
+    {
+      "char": "伐",
+      "grade": "S"
+    },
+    {
+      "char": "伯",
+      "grade": "S"
+    },
+    {
+      "char": "伴",
+      "grade": "S"
+    },
+    {
+      "char": "伸",
+      "grade": "S"
+    },
+    {
+      "char": "伺",
+      "grade": "S"
+    },
+    {
+      "char": "但",
+      "grade": "S"
+    },
+    {
+      "char": "佳",
+      "grade": "S"
+    },
+    {
+      "char": "併",
+      "grade": "S"
+    },
+    {
+      "char": "侍",
+      "grade": "S"
+    },
+    {
+      "char": "依",
+      "grade": "S"
+    },
+    {
+      "char": "侮",
+      "grade": "S"
+    },
+    {
+      "char": "侯",
+      "grade": "S"
+    },
+    {
+      "char": "侵",
+      "grade": "S"
+    },
+    {
+      "char": "侶",
+      "grade": "S"
+    },
+    {
+      "char": "促",
+      "grade": "S"
+    },
+    {
+      "char": "俊",
+      "grade": "S"
+    },
+    {
+      "char": "俗",
+      "grade": "S"
+    },
+    {
+      "char": "俸",
+      "grade": "S"
+    },
+    {
+      "char": "俺",
+      "grade": "S"
+    },
+    {
+      "char": "倒",
+      "grade": "S"
+    },
+    {
+      "char": "倣",
+      "grade": "S"
+    },
+    {
+      "char": "倫",
+      "grade": "S"
+    },
+    {
+      "char": "倹",
+      "grade": "S"
+    },
+    {
+      "char": "偉",
+      "grade": "S"
+    },
+    {
+      "char": "偏",
+      "grade": "S"
+    },
+    {
+      "char": "偵",
+      "grade": "S"
+    },
+    {
+      "char": "偶",
+      "grade": "S"
+    },
+    {
+      "char": "偽",
+      "grade": "S"
+    },
+    {
+      "char": "傍",
+      "grade": "S"
+    },
+    {
+      "char": "傑",
+      "grade": "S"
+    },
+    {
+      "char": "傘",
+      "grade": "S"
+    },
+    {
+      "char": "催",
+      "grade": "S"
+    },
+    {
+      "char": "傲",
+      "grade": "S"
+    },
+    {
+      "char": "債",
+      "grade": "S"
+    },
+    {
+      "char": "傾",
+      "grade": "S"
+    },
+    {
+      "char": "僅",
+      "grade": "S"
+    },
+    {
+      "char": "僕",
+      "grade": "S"
+    },
+    {
+      "char": "僚",
+      "grade": "S"
+    },
+    {
+      "char": "僧",
+      "grade": "S"
+    },
+    {
+      "char": "儀",
+      "grade": "S"
+    },
+    {
+      "char": "儒",
+      "grade": "S"
+    },
+    {
+      "char": "償",
+      "grade": "S"
+    },
+    {
+      "char": "充",
+      "grade": "S"
+    },
+    {
+      "char": "克",
+      "grade": "S"
+    },
+    {
+      "char": "免",
+      "grade": "S"
+    },
+    {
+      "char": "兼",
+      "grade": "S"
+    },
+    {
+      "char": "冒",
+      "grade": "S"
+    },
+    {
+      "char": "冗",
+      "grade": "S"
+    },
+    {
+      "char": "冠",
+      "grade": "S"
+    },
+    {
+      "char": "冥",
+      "grade": "S"
+    },
+    {
+      "char": "冶",
+      "grade": "S"
+    },
+    {
+      "char": "凄",
+      "grade": "S"
+    },
+    {
+      "char": "准",
+      "grade": "S"
+    },
+    {
+      "char": "凍",
+      "grade": "S"
+    },
+    {
+      "char": "凝",
+      "grade": "S"
+    },
+    {
+      "char": "凡",
+      "grade": "S"
+    },
+    {
+      "char": "凶",
+      "grade": "S"
+    },
+    {
+      "char": "凸",
+      "grade": "S"
+    },
+    {
+      "char": "凹",
+      "grade": "S"
+    },
+    {
+      "char": "刃",
+      "grade": "S"
+    },
+    {
+      "char": "刈",
+      "grade": "S"
+    },
+    {
+      "char": "刑",
+      "grade": "S"
+    },
+    {
+      "char": "到",
+      "grade": "S"
+    },
+    {
+      "char": "刹",
+      "grade": "S"
+    },
+    {
+      "char": "刺",
+      "grade": "S"
+    },
+    {
+      "char": "削",
+      "grade": "S"
+    },
+    {
+      "char": "剖",
+      "grade": "S"
+    },
+    {
+      "char": "剛",
+      "grade": "S"
+    },
+    {
+      "char": "剝",
+      "grade": "S"
+    },
+    {
+      "char": "剣",
+      "grade": "S"
+    },
+    {
+      "char": "剤",
+      "grade": "S"
+    },
+    {
+      "char": "剰",
+      "grade": "S"
+    },
+    {
+      "char": "劣",
+      "grade": "S"
+    },
+    {
+      "char": "励",
+      "grade": "S"
+    },
+    {
+      "char": "劾",
+      "grade": "S"
+    },
+    {
+      "char": "勃",
+      "grade": "S"
+    },
+    {
+      "char": "勅",
+      "grade": "S"
+    },
+    {
+      "char": "勘",
+      "grade": "S"
+    },
+    {
+      "char": "募",
+      "grade": "S"
+    },
+    {
+      "char": "勧",
+      "grade": "S"
+    },
+    {
+      "char": "勲",
+      "grade": "S"
+    },
+    {
+      "char": "勾",
+      "grade": "S"
+    },
+    {
+      "char": "匂",
+      "grade": "S"
+    },
+    {
+      "char": "匠",
+      "grade": "S"
+    },
+    {
+      "char": "匹",
+      "grade": "S"
+    },
+    {
+      "char": "匿",
+      "grade": "S"
+    },
+    {
+      "char": "升",
+      "grade": "S"
+    },
+    {
+      "char": "卑",
+      "grade": "S"
+    },
+    {
+      "char": "卓",
+      "grade": "S"
+    },
+    {
+      "char": "占",
+      "grade": "S"
+    },
+    {
+      "char": "即",
+      "grade": "S"
+    },
+    {
+      "char": "却",
+      "grade": "S"
+    },
+    {
+      "char": "卸",
+      "grade": "S"
+    },
+    {
+      "char": "厄",
+      "grade": "S"
+    },
+    {
+      "char": "厘",
+      "grade": "S"
+    },
+    {
+      "char": "又",
+      "grade": "S"
+    },
+    {
+      "char": "及",
+      "grade": "S"
+    },
+    {
+      "char": "双",
+      "grade": "S"
+    },
+    {
+      "char": "叔",
+      "grade": "S"
+    },
+    {
+      "char": "叙",
+      "grade": "S"
+    },
+    {
+      "char": "叫",
+      "grade": "S"
+    },
+    {
+      "char": "召",
+      "grade": "S"
+    },
+    {
+      "char": "𠮟",
+      "grade": "S"
+    },
+    {
+      "char": "吉",
+      "grade": "S"
+    },
+    {
+      "char": "吏",
+      "grade": "S"
+    },
+    {
+      "char": "吐",
+      "grade": "S"
+    },
+    {
+      "char": "吟",
+      "grade": "S"
+    },
+    {
+      "char": "含",
+      "grade": "S"
+    },
+    {
+      "char": "吹",
+      "grade": "S"
+    },
+    {
+      "char": "呂",
+      "grade": "S"
+    },
+    {
+      "char": "呈",
+      "grade": "S"
+    },
+    {
+      "char": "呉",
+      "grade": "S"
+    },
+    {
+      "char": "呪",
+      "grade": "S"
+    },
+    {
+      "char": "咲",
+      "grade": "S"
+    },
+    {
+      "char": "咽",
+      "grade": "S"
+    },
+    {
+      "char": "哀",
+      "grade": "S"
+    },
+    {
+      "char": "哲",
+      "grade": "S"
+    },
+    {
+      "char": "哺",
+      "grade": "S"
+    },
+    {
+      "char": "唄",
+      "grade": "S"
+    },
+    {
+      "char": "唆",
+      "grade": "S"
+    },
+    {
+      "char": "唇",
+      "grade": "S"
+    },
+    {
+      "char": "唐",
+      "grade": "S"
+    },
+    {
+      "char": "唯",
+      "grade": "S"
+    },
+    {
+      "char": "唾",
+      "grade": "S"
+    },
+    {
+      "char": "啓",
+      "grade": "S"
+    },
+    {
+      "char": "喉",
+      "grade": "S"
+    },
+    {
+      "char": "喚",
+      "grade": "S"
+    },
+    {
+      "char": "喝",
+      "grade": "S"
+    },
+    {
+      "char": "喩",
+      "grade": "S"
+    },
+    {
+      "char": "喪",
+      "grade": "S"
+    },
+    {
+      "char": "喫",
+      "grade": "S"
+    },
+    {
+      "char": "嗅",
+      "grade": "S"
+    },
+    {
+      "char": "嗣",
+      "grade": "S"
+    },
+    {
+      "char": "嘆",
+      "grade": "S"
+    },
+    {
+      "char": "嘱",
+      "grade": "S"
+    },
+    {
+      "char": "嘲",
+      "grade": "S"
+    },
+    {
+      "char": "噴",
+      "grade": "S"
+    },
+    {
+      "char": "嚇",
+      "grade": "S"
+    },
+    {
+      "char": "囚",
+      "grade": "S"
+    },
+    {
+      "char": "圏",
+      "grade": "S"
+    },
+    {
+      "char": "坊",
+      "grade": "S"
+    },
+    {
+      "char": "坑",
+      "grade": "S"
+    },
+    {
+      "char": "坪",
+      "grade": "S"
+    },
+    {
+      "char": "垣",
+      "grade": "S"
+    },
+    {
+      "char": "埋",
+      "grade": "S"
+    },
+    {
+      "char": "執",
+      "grade": "S"
+    },
+    {
+      "char": "培",
+      "grade": "S"
+    },
+    {
+      "char": "堀",
+      "grade": "S"
+    },
+    {
+      "char": "堅",
+      "grade": "S"
+    },
+    {
+      "char": "堆",
+      "grade": "S"
+    },
+    {
+      "char": "堕",
+      "grade": "S"
+    },
+    {
+      "char": "堤",
+      "grade": "S"
+    },
+    {
+      "char": "堪",
+      "grade": "S"
+    },
+    {
+      "char": "塀",
+      "grade": "S"
+    },
+    {
+      "char": "塁",
+      "grade": "S"
+    },
+    {
+      "char": "塊",
+      "grade": "S"
+    },
+    {
+      "char": "塑",
+      "grade": "S"
+    },
+    {
+      "char": "塔",
+      "grade": "S"
+    },
+    {
+      "char": "塗",
+      "grade": "S"
+    },
+    {
+      "char": "塚",
+      "grade": "S"
+    },
+    {
+      "char": "塞",
+      "grade": "S"
+    },
+    {
+      "char": "塡",
+      "grade": "S"
+    },
+    {
+      "char": "塾",
+      "grade": "S"
+    },
+    {
+      "char": "墜",
+      "grade": "S"
+    },
+    {
+      "char": "墳",
+      "grade": "S"
+    },
+    {
+      "char": "墾",
+      "grade": "S"
+    },
+    {
+      "char": "壁",
+      "grade": "S"
+    },
+    {
+      "char": "壇",
+      "grade": "S"
+    },
+    {
+      "char": "壊",
+      "grade": "S"
+    },
+    {
+      "char": "壌",
+      "grade": "S"
+    },
+    {
+      "char": "壮",
+      "grade": "S"
+    },
+    {
+      "char": "壱",
+      "grade": "S"
+    },
+    {
+      "char": "奇",
+      "grade": "S"
+    },
+    {
+      "char": "奉",
+      "grade": "S"
+    },
+    {
+      "char": "奔",
+      "grade": "S"
+    },
+    {
+      "char": "契",
+      "grade": "S"
+    },
+    {
+      "char": "奥",
+      "grade": "S"
+    },
+    {
+      "char": "奨",
+      "grade": "S"
+    },
+    {
+      "char": "奪",
+      "grade": "S"
+    },
+    {
+      "char": "奴",
+      "grade": "S"
+    },
+    {
+      "char": "如",
+      "grade": "S"
+    },
+    {
+      "char": "妃",
+      "grade": "S"
+    },
+    {
+      "char": "妄",
+      "grade": "S"
+    },
+    {
+      "char": "妊",
+      "grade": "S"
+    },
+    {
+      "char": "妖",
+      "grade": "S"
+    },
+    {
+      "char": "妙",
+      "grade": "S"
+    },
+    {
+      "char": "妥",
+      "grade": "S"
+    },
+    {
+      "char": "妨",
+      "grade": "S"
+    },
+    {
+      "char": "妬",
+      "grade": "S"
+    },
+    {
+      "char": "姓",
+      "grade": "S"
+    },
+    {
+      "char": "姫",
+      "grade": "S"
+    },
+    {
+      "char": "姻",
+      "grade": "S"
+    },
+    {
+      "char": "威",
+      "grade": "S"
+    },
+    {
+      "char": "娘",
+      "grade": "S"
+    },
+    {
+      "char": "娠",
+      "grade": "S"
+    },
+    {
+      "char": "娯",
+      "grade": "S"
+    },
+    {
+      "char": "婆",
+      "grade": "S"
+    },
+    {
+      "char": "婚",
+      "grade": "S"
+    },
+    {
+      "char": "婿",
+      "grade": "S"
+    },
+    {
+      "char": "媒",
+      "grade": "S"
+    },
+    {
+      "char": "嫁",
+      "grade": "S"
+    },
+    {
+      "char": "嫉",
+      "grade": "S"
+    },
+    {
+      "char": "嫌",
+      "grade": "S"
+    },
+    {
+      "char": "嫡",
+      "grade": "S"
+    },
+    {
+      "char": "嬢",
+      "grade": "S"
+    },
+    {
+      "char": "孔",
+      "grade": "S"
+    },
+    {
+      "char": "孤",
+      "grade": "S"
+    },
+    {
+      "char": "宛",
+      "grade": "S"
+    },
+    {
+      "char": "宜",
+      "grade": "S"
+    },
+    {
+      "char": "宰",
+      "grade": "S"
+    },
+    {
+      "char": "宴",
+      "grade": "S"
+    },
+    {
+      "char": "宵",
+      "grade": "S"
+    },
+    {
+      "char": "寂",
+      "grade": "S"
+    },
+    {
+      "char": "寛",
+      "grade": "S"
+    },
+    {
+      "char": "寝",
+      "grade": "S"
+    },
+    {
+      "char": "寡",
+      "grade": "S"
+    },
+    {
+      "char": "寧",
+      "grade": "S"
+    },
+    {
+      "char": "審",
+      "grade": "S"
+    },
+    {
+      "char": "寮",
+      "grade": "S"
+    },
+    {
+      "char": "寿",
+      "grade": "S"
+    },
+    {
+      "char": "封",
+      "grade": "S"
+    },
+    {
+      "char": "尉",
+      "grade": "S"
+    },
+    {
+      "char": "尋",
+      "grade": "S"
+    },
+    {
+      "char": "尚",
+      "grade": "S"
+    },
+    {
+      "char": "尻",
+      "grade": "S"
+    },
+    {
+      "char": "尼",
+      "grade": "S"
+    },
+    {
+      "char": "尽",
+      "grade": "S"
+    },
+    {
+      "char": "尾",
+      "grade": "S"
+    },
+    {
+      "char": "尿",
+      "grade": "S"
+    },
+    {
+      "char": "屈",
+      "grade": "S"
+    },
+    {
+      "char": "履",
+      "grade": "S"
+    },
+    {
+      "char": "屯",
+      "grade": "S"
+    },
+    {
+      "char": "岬",
+      "grade": "S"
+    },
+    {
+      "char": "岳",
+      "grade": "S"
+    },
+    {
+      "char": "峠",
+      "grade": "S"
+    },
+    {
+      "char": "峡",
+      "grade": "S"
+    },
+    {
+      "char": "峰",
+      "grade": "S"
+    },
+    {
+      "char": "崇",
+      "grade": "S"
+    },
+    {
+      "char": "崖",
+      "grade": "S"
+    },
+    {
+      "char": "崩",
+      "grade": "S"
+    },
+    {
+      "char": "嵐",
+      "grade": "S"
+    },
+    {
+      "char": "巧",
+      "grade": "S"
+    },
+    {
+      "char": "巨",
+      "grade": "S"
+    },
+    {
+      "char": "巾",
+      "grade": "S"
+    },
+    {
+      "char": "帆",
+      "grade": "S"
+    },
+    {
+      "char": "帝",
+      "grade": "S"
+    },
+    {
+      "char": "帥",
+      "grade": "S"
+    },
+    {
+      "char": "帽",
+      "grade": "S"
+    },
+    {
+      "char": "幅",
+      "grade": "S"
+    },
+    {
+      "char": "幣",
+      "grade": "S"
+    },
+    {
+      "char": "幻",
+      "grade": "S"
+    },
+    {
+      "char": "幽",
+      "grade": "S"
+    },
+    {
+      "char": "幾",
+      "grade": "S"
+    },
+    {
+      "char": "床",
+      "grade": "S"
+    },
+    {
+      "char": "庶",
+      "grade": "S"
+    },
+    {
+      "char": "庸",
+      "grade": "S"
+    },
+    {
+      "char": "廃",
+      "grade": "S"
+    },
+    {
+      "char": "廊",
+      "grade": "S"
+    },
+    {
+      "char": "廉",
+      "grade": "S"
+    },
+    {
+      "char": "廷",
+      "grade": "S"
+    },
+    {
+      "char": "弄",
+      "grade": "S"
+    },
+    {
+      "char": "弊",
+      "grade": "S"
+    },
+    {
+      "char": "弐",
+      "grade": "S"
+    },
+    {
+      "char": "弔",
+      "grade": "S"
+    },
+    {
+      "char": "弥",
+      "grade": "S"
+    },
+    {
+      "char": "弦",
+      "grade": "S"
+    },
+    {
+      "char": "弧",
+      "grade": "S"
+    },
+    {
+      "char": "弾",
+      "grade": "S"
+    },
+    {
+      "char": "彙",
+      "grade": "S"
+    },
+    {
+      "char": "彩",
+      "grade": "S"
+    },
+    {
+      "char": "彫",
+      "grade": "S"
+    },
+    {
+      "char": "彰",
+      "grade": "S"
+    },
+    {
+      "char": "影",
+      "grade": "S"
+    },
+    {
+      "char": "彼",
+      "grade": "S"
+    },
+    {
+      "char": "征",
+      "grade": "S"
+    },
+    {
+      "char": "徐",
+      "grade": "S"
+    },
+    {
+      "char": "御",
+      "grade": "S"
+    },
+    {
+      "char": "循",
+      "grade": "S"
+    },
+    {
+      "char": "微",
+      "grade": "S"
+    },
+    {
+      "char": "徴",
+      "grade": "S"
+    },
+    {
+      "char": "徹",
+      "grade": "S"
+    },
+    {
+      "char": "忌",
+      "grade": "S"
+    },
+    {
+      "char": "忍",
+      "grade": "S"
+    },
+    {
+      "char": "忙",
+      "grade": "S"
+    },
+    {
+      "char": "怒",
+      "grade": "S"
+    },
+    {
+      "char": "怖",
+      "grade": "S"
+    },
+    {
+      "char": "怠",
+      "grade": "S"
+    },
+    {
+      "char": "怨",
+      "grade": "S"
+    },
+    {
+      "char": "怪",
+      "grade": "S"
+    },
+    {
+      "char": "恋",
+      "grade": "S"
+    },
+    {
+      "char": "恐",
+      "grade": "S"
+    },
+    {
+      "char": "恒",
+      "grade": "S"
+    },
+    {
+      "char": "恣",
+      "grade": "S"
+    },
+    {
+      "char": "恥",
+      "grade": "S"
+    },
+    {
+      "char": "恨",
+      "grade": "S"
+    },
+    {
+      "char": "恭",
+      "grade": "S"
+    },
+    {
+      "char": "恵",
+      "grade": "S"
+    },
+    {
+      "char": "悔",
+      "grade": "S"
+    },
+    {
+      "char": "悟",
+      "grade": "S"
+    },
+    {
+      "char": "悠",
+      "grade": "S"
+    },
+    {
+      "char": "患",
+      "grade": "S"
+    },
+    {
+      "char": "悦",
+      "grade": "S"
+    },
+    {
+      "char": "悩",
+      "grade": "S"
+    },
+    {
+      "char": "悼",
+      "grade": "S"
+    },
+    {
+      "char": "惑",
+      "grade": "S"
+    },
+    {
+      "char": "惜",
+      "grade": "S"
+    },
+    {
+      "char": "惧",
+      "grade": "S"
+    },
+    {
+      "char": "惨",
+      "grade": "S"
+    },
+    {
+      "char": "惰",
+      "grade": "S"
+    },
+    {
+      "char": "愁",
+      "grade": "S"
+    },
+    {
+      "char": "愉",
+      "grade": "S"
+    },
+    {
+      "char": "愚",
+      "grade": "S"
+    },
+    {
+      "char": "慨",
+      "grade": "S"
+    },
+    {
+      "char": "慄",
+      "grade": "S"
+    },
+    {
+      "char": "慈",
+      "grade": "S"
+    },
+    {
+      "char": "慌",
+      "grade": "S"
+    },
+    {
+      "char": "慎",
+      "grade": "S"
+    },
+    {
+      "char": "慕",
+      "grade": "S"
+    },
+    {
+      "char": "慢",
+      "grade": "S"
+    },
+    {
+      "char": "慮",
+      "grade": "S"
+    },
+    {
+      "char": "慰",
+      "grade": "S"
+    },
+    {
+      "char": "慶",
+      "grade": "S"
+    },
+    {
+      "char": "憂",
+      "grade": "S"
+    },
+    {
+      "char": "憎",
+      "grade": "S"
+    },
+    {
+      "char": "憤",
+      "grade": "S"
+    },
+    {
+      "char": "憧",
+      "grade": "S"
+    },
+    {
+      "char": "憩",
+      "grade": "S"
+    },
+    {
+      "char": "憬",
+      "grade": "S"
+    },
+    {
+      "char": "憶",
+      "grade": "S"
+    },
+    {
+      "char": "憾",
+      "grade": "S"
+    },
+    {
+      "char": "懇",
+      "grade": "S"
+    },
+    {
+      "char": "懐",
+      "grade": "S"
+    },
+    {
+      "char": "懲",
+      "grade": "S"
+    },
+    {
+      "char": "懸",
+      "grade": "S"
+    },
+    {
+      "char": "戒",
+      "grade": "S"
+    },
+    {
+      "char": "戚",
+      "grade": "S"
+    },
+    {
+      "char": "戯",
+      "grade": "S"
+    },
+    {
+      "char": "戴",
+      "grade": "S"
+    },
+    {
+      "char": "戻",
+      "grade": "S"
+    },
+    {
+      "char": "房",
+      "grade": "S"
+    },
+    {
+      "char": "扇",
+      "grade": "S"
+    },
+    {
+      "char": "扉",
+      "grade": "S"
+    },
+    {
+      "char": "払",
+      "grade": "S"
+    },
+    {
+      "char": "扱",
+      "grade": "S"
+    },
+    {
+      "char": "扶",
+      "grade": "S"
+    },
+    {
+      "char": "抄",
+      "grade": "S"
+    },
+    {
+      "char": "把",
+      "grade": "S"
+    },
+    {
+      "char": "抑",
+      "grade": "S"
+    },
+    {
+      "char": "抗",
+      "grade": "S"
+    },
+    {
+      "char": "抜",
+      "grade": "S"
+    },
+    {
+      "char": "択",
+      "grade": "S"
+    },
+    {
+      "char": "披",
+      "grade": "S"
+    },
+    {
+      "char": "抱",
+      "grade": "S"
+    },
+    {
+      "char": "抵",
+      "grade": "S"
+    },
+    {
+      "char": "抹",
+      "grade": "S"
+    },
+    {
+      "char": "押",
+      "grade": "S"
+    },
+    {
+      "char": "抽",
+      "grade": "S"
+    },
+    {
+      "char": "拉",
+      "grade": "S"
+    },
+    {
+      "char": "拍",
+      "grade": "S"
+    },
+    {
+      "char": "拐",
+      "grade": "S"
+    },
+    {
+      "char": "拒",
+      "grade": "S"
+    },
+    {
+      "char": "拓",
+      "grade": "S"
+    },
+    {
+      "char": "拘",
+      "grade": "S"
+    },
+    {
+      "char": "拙",
+      "grade": "S"
+    },
+    {
+      "char": "拠",
+      "grade": "S"
+    },
+    {
+      "char": "括",
+      "grade": "S"
+    },
+    {
+      "char": "拭",
+      "grade": "S"
+    },
+    {
+      "char": "拳",
+      "grade": "S"
+    },
+    {
+      "char": "拶",
+      "grade": "S"
+    },
+    {
+      "char": "拷",
+      "grade": "S"
+    },
+    {
+      "char": "挑",
+      "grade": "S"
+    },
+    {
+      "char": "挟",
+      "grade": "S"
+    },
+    {
+      "char": "挨",
+      "grade": "S"
+    },
+    {
+      "char": "挫",
+      "grade": "S"
+    },
+    {
+      "char": "振",
+      "grade": "S"
+    },
+    {
+      "char": "挿",
+      "grade": "S"
+    },
+    {
+      "char": "捉",
+      "grade": "S"
+    },
+    {
+      "char": "捕",
+      "grade": "S"
+    },
+    {
+      "char": "捗",
+      "grade": "S"
+    },
+    {
+      "char": "捜",
+      "grade": "S"
+    },
+    {
+      "char": "据",
+      "grade": "S"
+    },
+    {
+      "char": "捻",
+      "grade": "S"
+    },
+    {
+      "char": "掃",
+      "grade": "S"
+    },
+    {
+      "char": "掌",
+      "grade": "S"
+    },
+    {
+      "char": "排",
+      "grade": "S"
+    },
+    {
+      "char": "掘",
+      "grade": "S"
+    },
+    {
+      "char": "掛",
+      "grade": "S"
+    },
+    {
+      "char": "控",
+      "grade": "S"
+    },
+    {
+      "char": "措",
+      "grade": "S"
+    },
+    {
+      "char": "掲",
+      "grade": "S"
+    },
+    {
+      "char": "描",
+      "grade": "S"
+    },
+    {
+      "char": "揚",
+      "grade": "S"
+    },
+    {
+      "char": "換",
+      "grade": "S"
+    },
+    {
+      "char": "握",
+      "grade": "S"
+    },
+    {
+      "char": "援",
+      "grade": "S"
+    },
+    {
+      "char": "揺",
+      "grade": "S"
+    },
+    {
+      "char": "搬",
+      "grade": "S"
+    },
+    {
+      "char": "搭",
+      "grade": "S"
+    },
+    {
+      "char": "携",
+      "grade": "S"
+    },
+    {
+      "char": "搾",
+      "grade": "S"
+    },
+    {
+      "char": "摂",
+      "grade": "S"
+    },
+    {
+      "char": "摘",
+      "grade": "S"
+    },
+    {
+      "char": "摩",
+      "grade": "S"
+    },
+    {
+      "char": "摯",
+      "grade": "S"
+    },
+    {
+      "char": "撃",
+      "grade": "S"
+    },
+    {
+      "char": "撤",
+      "grade": "S"
+    },
+    {
+      "char": "撮",
+      "grade": "S"
+    },
+    {
+      "char": "撲",
+      "grade": "S"
+    },
+    {
+      "char": "擁",
+      "grade": "S"
+    },
+    {
+      "char": "擦",
+      "grade": "S"
+    },
+    {
+      "char": "擬",
+      "grade": "S"
+    },
+    {
+      "char": "攻",
+      "grade": "S"
+    },
+    {
+      "char": "敏",
+      "grade": "S"
+    },
+    {
+      "char": "敢",
+      "grade": "S"
+    },
+    {
+      "char": "敷",
+      "grade": "S"
+    },
+    {
+      "char": "斉",
+      "grade": "S"
+    },
+    {
+      "char": "斎",
+      "grade": "S"
+    },
+    {
+      "char": "斑",
+      "grade": "S"
+    },
+    {
+      "char": "斗",
+      "grade": "S"
+    },
+    {
+      "char": "斜",
+      "grade": "S"
+    },
+    {
+      "char": "斤",
+      "grade": "S"
+    },
+    {
+      "char": "斥",
+      "grade": "S"
+    },
+    {
+      "char": "斬",
+      "grade": "S"
+    },
+    {
+      "char": "施",
+      "grade": "S"
+    },
+    {
+      "char": "旋",
+      "grade": "S"
+    },
+    {
+      "char": "既",
+      "grade": "S"
+    },
+    {
+      "char": "旦",
+      "grade": "S"
+    },
+    {
+      "char": "旨",
+      "grade": "S"
+    },
+    {
+      "char": "旬",
+      "grade": "S"
+    },
+    {
+      "char": "旺",
+      "grade": "S"
+    },
+    {
+      "char": "昆",
+      "grade": "S"
+    },
+    {
+      "char": "昇",
+      "grade": "S"
+    },
+    {
+      "char": "昧",
+      "grade": "S"
+    },
+    {
+      "char": "是",
+      "grade": "S"
+    },
+    {
+      "char": "曽",
+      "grade": "S"
+    },
+    {
+      "char": "普",
+      "grade": "S"
+    },
+    {
+      "char": "晶",
+      "grade": "S"
+    },
+    {
+      "char": "暁",
+      "grade": "S"
+    },
+    {
+      "char": "暇",
+      "grade": "S"
+    },
+    {
+      "char": "暦",
+      "grade": "S"
+    },
+    {
+      "char": "暫",
+      "grade": "S"
+    },
+    {
+      "char": "曇",
+      "grade": "S"
+    },
+    {
+      "char": "曖",
+      "grade": "S"
+    },
+    {
+      "char": "更",
+      "grade": "S"
+    },
+    {
+      "char": "曹",
+      "grade": "S"
+    },
+    {
+      "char": "替",
+      "grade": "S"
+    },
+    {
+      "char": "朕",
+      "grade": "S"
+    },
+    {
+      "char": "朱",
+      "grade": "S"
+    },
+    {
+      "char": "朴",
+      "grade": "S"
+    },
+    {
+      "char": "朽",
+      "grade": "S"
+    },
+    {
+      "char": "杉",
+      "grade": "S"
+    },
+    {
+      "char": "杯",
+      "grade": "S"
+    },
+    {
+      "char": "析",
+      "grade": "S"
+    },
+    {
+      "char": "枕",
+      "grade": "S"
+    },
+    {
+      "char": "枠",
+      "grade": "S"
+    },
+    {
+      "char": "枢",
+      "grade": "S"
+    },
+    {
+      "char": "枯",
+      "grade": "S"
+    },
+    {
+      "char": "架",
+      "grade": "S"
+    },
+    {
+      "char": "柄",
+      "grade": "S"
+    },
+    {
+      "char": "某",
+      "grade": "S"
+    },
+    {
+      "char": "柔",
+      "grade": "S"
+    },
+    {
+      "char": "柳",
+      "grade": "S"
+    },
+    {
+      "char": "柵",
+      "grade": "S"
+    },
+    {
+      "char": "柿",
+      "grade": "S"
+    },
+    {
+      "char": "栓",
+      "grade": "S"
+    },
+    {
+      "char": "核",
+      "grade": "S"
+    },
+    {
+      "char": "栽",
+      "grade": "S"
+    },
+    {
+      "char": "桁",
+      "grade": "S"
+    },
+    {
+      "char": "桃",
+      "grade": "S"
+    },
+    {
+      "char": "桑",
+      "grade": "S"
+    },
+    {
+      "char": "桟",
+      "grade": "S"
+    },
+    {
+      "char": "梗",
+      "grade": "S"
+    },
+    {
+      "char": "棄",
+      "grade": "S"
+    },
+    {
+      "char": "棋",
+      "grade": "S"
+    },
+    {
+      "char": "棚",
+      "grade": "S"
+    },
+    {
+      "char": "棟",
+      "grade": "S"
+    },
+    {
+      "char": "棺",
+      "grade": "S"
+    },
+    {
+      "char": "椅",
+      "grade": "S"
+    },
+    {
+      "char": "椎",
+      "grade": "S"
+    },
+    {
+      "char": "楷",
+      "grade": "S"
+    },
+    {
+      "char": "楼",
+      "grade": "S"
+    },
+    {
+      "char": "概",
+      "grade": "S"
+    },
+    {
+      "char": "槽",
+      "grade": "S"
+    },
+    {
+      "char": "欄",
+      "grade": "S"
+    },
+    {
+      "char": "欧",
+      "grade": "S"
+    },
+    {
+      "char": "欺",
+      "grade": "S"
+    },
+    {
+      "char": "款",
+      "grade": "S"
+    },
+    {
+      "char": "歓",
+      "grade": "S"
+    },
+    {
+      "char": "歳",
+      "grade": "S"
+    },
+    {
+      "char": "殉",
+      "grade": "S"
+    },
+    {
+      "char": "殊",
+      "grade": "S"
+    },
+    {
+      "char": "殖",
+      "grade": "S"
+    },
+    {
+      "char": "殴",
+      "grade": "S"
+    },
+    {
+      "char": "殻",
+      "grade": "S"
+    },
+    {
+      "char": "殿",
+      "grade": "S"
+    },
+    {
+      "char": "毀",
+      "grade": "S"
+    },
+    {
+      "char": "氾",
+      "grade": "S"
+    },
+    {
+      "char": "汁",
+      "grade": "S"
+    },
+    {
+      "char": "汎",
+      "grade": "S"
+    },
+    {
+      "char": "汗",
+      "grade": "S"
+    },
+    {
+      "char": "汚",
+      "grade": "S"
+    },
+    {
+      "char": "江",
+      "grade": "S"
+    },
+    {
+      "char": "汰",
+      "grade": "S"
+    },
+    {
+      "char": "沃",
+      "grade": "S"
+    },
+    {
+      "char": "沈",
+      "grade": "S"
+    },
+    {
+      "char": "沙",
+      "grade": "S"
+    },
+    {
+      "char": "没",
+      "grade": "S"
+    },
+    {
+      "char": "沢",
+      "grade": "S"
+    },
+    {
+      "char": "沸",
+      "grade": "S"
+    },
+    {
+      "char": "沼",
+      "grade": "S"
+    },
+    {
+      "char": "況",
+      "grade": "S"
+    },
+    {
+      "char": "泊",
+      "grade": "S"
+    },
+    {
+      "char": "泌",
+      "grade": "S"
+    },
+    {
+      "char": "泡",
+      "grade": "S"
+    },
+    {
+      "char": "泥",
+      "grade": "S"
+    },
+    {
+      "char": "泰",
+      "grade": "S"
+    },
+    {
+      "char": "洞",
+      "grade": "S"
+    },
+    {
+      "char": "津",
+      "grade": "S"
+    },
+    {
+      "char": "洪",
+      "grade": "S"
+    },
+    {
+      "char": "浄",
+      "grade": "S"
+    },
+    {
+      "char": "浜",
+      "grade": "S"
+    },
+    {
+      "char": "浦",
+      "grade": "S"
+    },
+    {
+      "char": "浪",
+      "grade": "S"
+    },
+    {
+      "char": "浮",
+      "grade": "S"
+    },
+    {
+      "char": "浸",
+      "grade": "S"
+    },
+    {
+      "char": "涙",
+      "grade": "S"
+    },
+    {
+      "char": "涯",
+      "grade": "S"
+    },
+    {
+      "char": "涼",
+      "grade": "S"
+    },
+    {
+      "char": "淑",
+      "grade": "S"
+    },
+    {
+      "char": "淡",
+      "grade": "S"
+    },
+    {
+      "char": "淫",
+      "grade": "S"
+    },
+    {
+      "char": "添",
+      "grade": "S"
+    },
+    {
+      "char": "渇",
+      "grade": "S"
+    },
+    {
+      "char": "渉",
+      "grade": "S"
+    },
+    {
+      "char": "渋",
+      "grade": "S"
+    },
+    {
+      "char": "渓",
+      "grade": "S"
+    },
+    {
+      "char": "渡",
+      "grade": "S"
+    },
+    {
+      "char": "渦",
+      "grade": "S"
+    },
+    {
+      "char": "湧",
+      "grade": "S"
+    },
+    {
+      "char": "湾",
+      "grade": "S"
+    },
+    {
+      "char": "湿",
+      "grade": "S"
+    },
+    {
+      "char": "滞",
+      "grade": "S"
+    },
+    {
+      "char": "溝",
+      "grade": "S"
+    },
+    {
+      "char": "溶",
+      "grade": "S"
+    },
+    {
+      "char": "溺",
+      "grade": "S"
+    },
+    {
+      "char": "滅",
+      "grade": "S"
+    },
+    {
+      "char": "滑",
+      "grade": "S"
+    },
+    {
+      "char": "滝",
+      "grade": "S"
+    },
+    {
+      "char": "滴",
+      "grade": "S"
+    },
+    {
+      "char": "漂",
+      "grade": "S"
+    },
+    {
+      "char": "漆",
+      "grade": "S"
+    },
+    {
+      "char": "漏",
+      "grade": "S"
+    },
+    {
+      "char": "漠",
+      "grade": "S"
+    },
+    {
+      "char": "漫",
+      "grade": "S"
+    },
+    {
+      "char": "漬",
+      "grade": "S"
+    },
+    {
+      "char": "漸",
+      "grade": "S"
+    },
+    {
+      "char": "潜",
+      "grade": "S"
+    },
+    {
+      "char": "潤",
+      "grade": "S"
+    },
+    {
+      "char": "潰",
+      "grade": "S"
+    },
+    {
+      "char": "澄",
+      "grade": "S"
+    },
+    {
+      "char": "濁",
+      "grade": "S"
+    },
+    {
+      "char": "濃",
+      "grade": "S"
+    },
+    {
+      "char": "濫",
+      "grade": "S"
+    },
+    {
+      "char": "濯",
+      "grade": "S"
+    },
+    {
+      "char": "瀬",
+      "grade": "S"
+    },
+    {
+      "char": "炉",
+      "grade": "S"
+    },
+    {
+      "char": "炊",
+      "grade": "S"
+    },
+    {
+      "char": "炎",
+      "grade": "S"
+    },
+    {
+      "char": "為",
+      "grade": "S"
+    },
+    {
+      "char": "烈",
+      "grade": "S"
+    },
+    {
+      "char": "焦",
+      "grade": "S"
+    },
+    {
+      "char": "煮",
+      "grade": "S"
+    },
+    {
+      "char": "煎",
+      "grade": "S"
+    },
+    {
+      "char": "煙",
+      "grade": "S"
+    },
+    {
+      "char": "煩",
+      "grade": "S"
+    },
+    {
+      "char": "黙",
+      "grade": "S"
+    },
+    {
+      "char": "燥",
+      "grade": "S"
+    },
+    {
+      "char": "爆",
+      "grade": "S"
+    },
+    {
+      "char": "爪",
+      "grade": "S"
+    },
+    {
+      "char": "爵",
+      "grade": "S"
+    },
+    {
+      "char": "爽",
+      "grade": "S"
+    },
+    {
+      "char": "牙",
+      "grade": "S"
+    },
+    {
+      "char": "牲",
+      "grade": "S"
+    },
+    {
+      "char": "犠",
+      "grade": "S"
+    },
+    {
+      "char": "狂",
+      "grade": "S"
+    },
+    {
+      "char": "狙",
+      "grade": "S"
+    },
+    {
+      "char": "狩",
+      "grade": "S"
+    },
+    {
+      "char": "狭",
+      "grade": "S"
+    },
+    {
+      "char": "猛",
+      "grade": "S"
+    },
+    {
+      "char": "猟",
+      "grade": "S"
+    },
+    {
+      "char": "猫",
+      "grade": "S"
+    },
+    {
+      "char": "献",
+      "grade": "S"
+    },
+    {
+      "char": "猶",
+      "grade": "S"
+    },
+    {
+      "char": "猿",
+      "grade": "S"
+    },
+    {
+      "char": "獄",
+      "grade": "S"
+    },
+    {
+      "char": "獣",
+      "grade": "S"
+    },
+    {
+      "char": "獲",
+      "grade": "S"
+    },
+    {
+      "char": "玄",
+      "grade": "S"
+    },
+    {
+      "char": "玩",
+      "grade": "S"
+    },
+    {
+      "char": "珍",
+      "grade": "S"
+    },
+    {
+      "char": "珠",
+      "grade": "S"
+    },
+    {
+      "char": "琴",
+      "grade": "S"
+    },
+    {
+      "char": "瑠",
+      "grade": "S"
+    },
+    {
+      "char": "璃",
+      "grade": "S"
+    },
+    {
+      "char": "璧",
+      "grade": "S"
+    },
+    {
+      "char": "環",
+      "grade": "S"
+    },
+    {
+      "char": "璽",
+      "grade": "S"
+    },
+    {
+      "char": "瓦",
+      "grade": "S"
+    },
+    {
+      "char": "瓶",
+      "grade": "S"
+    },
+    {
+      "char": "甘",
+      "grade": "S"
+    },
+    {
+      "char": "甚",
+      "grade": "S"
+    },
+    {
+      "char": "甲",
+      "grade": "S"
+    },
+    {
+      "char": "畏",
+      "grade": "S"
+    },
+    {
+      "char": "畔",
+      "grade": "S"
+    },
+    {
+      "char": "畜",
+      "grade": "S"
+    },
+    {
+      "char": "畝",
+      "grade": "S"
+    },
+    {
+      "char": "畳",
+      "grade": "S"
+    },
+    {
+      "char": "畿",
+      "grade": "S"
+    },
+    {
+      "char": "疎",
+      "grade": "S"
+    },
+    {
+      "char": "疫",
+      "grade": "S"
+    },
+    {
+      "char": "疲",
+      "grade": "S"
+    },
+    {
+      "char": "疾",
+      "grade": "S"
+    },
+    {
+      "char": "症",
+      "grade": "S"
+    },
+    {
+      "char": "痕",
+      "grade": "S"
+    },
+    {
+      "char": "痘",
+      "grade": "S"
+    },
+    {
+      "char": "痢",
+      "grade": "S"
+    },
+    {
+      "char": "痩",
+      "grade": "S"
+    },
+    {
+      "char": "痴",
+      "grade": "S"
+    },
+    {
+      "char": "瘍",
+      "grade": "S"
+    },
+    {
+      "char": "療",
+      "grade": "S"
+    },
+    {
+      "char": "癒",
+      "grade": "S"
+    },
+    {
+      "char": "癖",
+      "grade": "S"
+    },
+    {
+      "char": "皆",
+      "grade": "S"
+    },
+    {
+      "char": "盆",
+      "grade": "S"
+    },
+    {
+      "char": "盗",
+      "grade": "S"
+    },
+    {
+      "char": "監",
+      "grade": "S"
+    },
+    {
+      "char": "盤",
+      "grade": "S"
+    },
+    {
+      "char": "盲",
+      "grade": "S"
+    },
+    {
+      "char": "盾",
+      "grade": "S"
+    },
+    {
+      "char": "眉",
+      "grade": "S"
+    },
+    {
+      "char": "眠",
+      "grade": "S"
+    },
+    {
+      "char": "眺",
+      "grade": "S"
+    },
+    {
+      "char": "督",
+      "grade": "S"
+    },
+    {
+      "char": "睦",
+      "grade": "S"
+    },
+    {
+      "char": "睡",
+      "grade": "S"
+    },
+    {
+      "char": "瞬",
+      "grade": "S"
+    },
+    {
+      "char": "瞭",
+      "grade": "S"
+    },
+    {
+      "char": "瞳",
+      "grade": "S"
+    },
+    {
+      "char": "矛",
+      "grade": "S"
+    },
+    {
+      "char": "矯",
+      "grade": "S"
+    },
+    {
+      "char": "砕",
+      "grade": "S"
+    },
+    {
+      "char": "砲",
+      "grade": "S"
+    },
+    {
+      "char": "硝",
+      "grade": "S"
+    },
+    {
+      "char": "硫",
+      "grade": "S"
+    },
+    {
+      "char": "硬",
+      "grade": "S"
+    },
+    {
+      "char": "碁",
+      "grade": "S"
+    },
+    {
+      "char": "碑",
+      "grade": "S"
+    },
+    {
+      "char": "磨",
+      "grade": "S"
+    },
+    {
+      "char": "礁",
+      "grade": "S"
+    },
+    {
+      "char": "礎",
+      "grade": "S"
+    },
+    {
+      "char": "祈",
+      "grade": "S"
+    },
+    {
+      "char": "祉",
+      "grade": "S"
+    },
+    {
+      "char": "祥",
+      "grade": "S"
+    },
+    {
+      "char": "禅",
+      "grade": "S"
+    },
+    {
+      "char": "禍",
+      "grade": "S"
+    },
+    {
+      "char": "秀",
+      "grade": "S"
+    },
+    {
+      "char": "租",
+      "grade": "S"
+    },
+    {
+      "char": "秩",
+      "grade": "S"
+    },
+    {
+      "char": "称",
+      "grade": "S"
+    },
+    {
+      "char": "稚",
+      "grade": "S"
+    },
+    {
+      "char": "稲",
+      "grade": "S"
+    },
+    {
+      "char": "稼",
+      "grade": "S"
+    },
+    {
+      "char": "稽",
+      "grade": "S"
+    },
+    {
+      "char": "稿",
+      "grade": "S"
+    },
+    {
+      "char": "穂",
+      "grade": "S"
+    },
+    {
+      "char": "穏",
+      "grade": "S"
+    },
+    {
+      "char": "穫",
+      "grade": "S"
+    },
+    {
+      "char": "突",
+      "grade": "S"
+    },
+    {
+      "char": "窃",
+      "grade": "S"
+    },
+    {
+      "char": "窒",
+      "grade": "S"
+    },
+    {
+      "char": "窟",
+      "grade": "S"
+    },
+    {
+      "char": "窮",
+      "grade": "S"
+    },
+    {
+      "char": "窯",
+      "grade": "S"
+    },
+    {
+      "char": "竜",
+      "grade": "S"
+    },
+    {
+      "char": "端",
+      "grade": "S"
+    },
+    {
+      "char": "符",
+      "grade": "S"
+    },
+    {
+      "char": "筒",
+      "grade": "S"
+    },
+    {
+      "char": "箇",
+      "grade": "S"
+    },
+    {
+      "char": "箋",
+      "grade": "S"
+    },
+    {
+      "char": "箸",
+      "grade": "S"
+    },
+    {
+      "char": "範",
+      "grade": "S"
+    },
+    {
+      "char": "篤",
+      "grade": "S"
+    },
+    {
+      "char": "簿",
+      "grade": "S"
+    },
+    {
+      "char": "籍",
+      "grade": "S"
+    },
+    {
+      "char": "籠",
+      "grade": "S"
+    },
+    {
+      "char": "粋",
+      "grade": "S"
+    },
+    {
+      "char": "粒",
+      "grade": "S"
+    },
+    {
+      "char": "粗",
+      "grade": "S"
+    },
+    {
+      "char": "粘",
+      "grade": "S"
+    },
+    {
+      "char": "粛",
+      "grade": "S"
+    },
+    {
+      "char": "粧",
+      "grade": "S"
+    },
+    {
+      "char": "糧",
+      "grade": "S"
+    },
+    {
+      "char": "糾",
+      "grade": "S"
+    },
+    {
+      "char": "紋",
+      "grade": "S"
+    },
+    {
+      "char": "紛",
+      "grade": "S"
+    },
+    {
+      "char": "紡",
+      "grade": "S"
+    },
+    {
+      "char": "索",
+      "grade": "S"
+    },
+    {
+      "char": "紫",
+      "grade": "S"
+    },
+    {
+      "char": "累",
+      "grade": "S"
+    },
+    {
+      "char": "紳",
+      "grade": "S"
+    },
+    {
+      "char": "紹",
+      "grade": "S"
+    },
+    {
+      "char": "紺",
+      "grade": "S"
+    },
+    {
+      "char": "絞",
+      "grade": "S"
+    },
+    {
+      "char": "絡",
+      "grade": "S"
+    },
+    {
+      "char": "継",
+      "grade": "S"
+    },
+    {
+      "char": "維",
+      "grade": "S"
+    },
+    {
+      "char": "綱",
+      "grade": "S"
+    },
+    {
+      "char": "網",
+      "grade": "S"
+    },
+    {
+      "char": "綻",
+      "grade": "S"
+    },
+    {
+      "char": "緊",
+      "grade": "S"
+    },
+    {
+      "char": "緒",
+      "grade": "S"
+    },
+    {
+      "char": "締",
+      "grade": "S"
+    },
+    {
+      "char": "緩",
+      "grade": "S"
+    },
+    {
+      "char": "緯",
+      "grade": "S"
+    },
+    {
+      "char": "緻",
+      "grade": "S"
+    },
+    {
+      "char": "縁",
+      "grade": "S"
+    },
+    {
+      "char": "縛",
+      "grade": "S"
+    },
+    {
+      "char": "縫",
+      "grade": "S"
+    },
+    {
+      "char": "繁",
+      "grade": "S"
+    },
+    {
+      "char": "繊",
+      "grade": "S"
+    },
+    {
+      "char": "繕",
+      "grade": "S"
+    },
+    {
+      "char": "繭",
+      "grade": "S"
+    },
+    {
+      "char": "繰",
+      "grade": "S"
+    },
+    {
+      "char": "缶",
+      "grade": "S"
+    },
+    {
+      "char": "罰",
+      "grade": "S"
+    },
+    {
+      "char": "罵",
+      "grade": "S"
+    },
+    {
+      "char": "罷",
+      "grade": "S"
+    },
+    {
+      "char": "羅",
+      "grade": "S"
+    },
+    {
+      "char": "羞",
+      "grade": "S"
+    },
+    {
+      "char": "羨",
+      "grade": "S"
+    },
+    {
+      "char": "翁",
+      "grade": "S"
+    },
+    {
+      "char": "翼",
+      "grade": "S"
+    },
+    {
+      "char": "翻",
+      "grade": "S"
+    },
+    {
+      "char": "耐",
+      "grade": "S"
+    },
+    {
+      "char": "耗",
+      "grade": "S"
+    },
+    {
+      "char": "聴",
+      "grade": "S"
+    },
+    {
+      "char": "肌",
+      "grade": "S"
+    },
+    {
+      "char": "肖",
+      "grade": "S"
+    },
+    {
+      "char": "肘",
+      "grade": "S"
+    },
+    {
+      "char": "肝",
+      "grade": "S"
+    },
+    {
+      "char": "股",
+      "grade": "S"
+    },
+    {
+      "char": "肢",
+      "grade": "S"
+    },
+    {
+      "char": "肩",
+      "grade": "S"
+    },
+    {
+      "char": "肪",
+      "grade": "S"
+    },
+    {
+      "char": "肯",
+      "grade": "S"
+    },
+    {
+      "char": "胆",
+      "grade": "S"
+    },
+    {
+      "char": "胎",
+      "grade": "S"
+    },
+    {
+      "char": "胞",
+      "grade": "S"
+    },
+    {
+      "char": "胴",
+      "grade": "S"
+    },
+    {
+      "char": "脂",
+      "grade": "S"
+    },
+    {
+      "char": "脅",
+      "grade": "S"
+    },
+    {
+      "char": "脇",
+      "grade": "S"
+    },
+    {
+      "char": "脊",
+      "grade": "S"
+    },
+    {
+      "char": "脚",
+      "grade": "S"
+    },
+    {
+      "char": "脱",
+      "grade": "S"
+    },
+    {
+      "char": "腎",
+      "grade": "S"
+    },
+    {
+      "char": "腐",
+      "grade": "S"
+    },
+    {
+      "char": "腕",
+      "grade": "S"
+    },
+    {
+      "char": "腫",
+      "grade": "S"
+    },
+    {
+      "char": "腰",
+      "grade": "S"
+    },
+    {
+      "char": "腺",
+      "grade": "S"
+    },
+    {
+      "char": "膚",
+      "grade": "S"
+    },
+    {
+      "char": "膜",
+      "grade": "S"
+    },
+    {
+      "char": "膝",
+      "grade": "S"
+    },
+    {
+      "char": "膨",
+      "grade": "S"
+    },
+    {
+      "char": "膳",
+      "grade": "S"
+    },
+    {
+      "char": "臆",
+      "grade": "S"
+    },
+    {
+      "char": "臭",
+      "grade": "S"
+    },
+    {
+      "char": "致",
+      "grade": "S"
+    },
+    {
+      "char": "臼",
+      "grade": "S"
+    },
+    {
+      "char": "舗",
+      "grade": "S"
+    },
+    {
+      "char": "舞",
+      "grade": "S"
+    },
+    {
+      "char": "舟",
+      "grade": "S"
+    },
+    {
+      "char": "般",
+      "grade": "S"
+    },
+    {
+      "char": "舶",
+      "grade": "S"
+    },
+    {
+      "char": "舷",
+      "grade": "S"
+    },
+    {
+      "char": "艇",
+      "grade": "S"
+    },
+    {
+      "char": "艦",
+      "grade": "S"
+    },
+    {
+      "char": "艶",
+      "grade": "S"
+    },
+    {
+      "char": "芋",
+      "grade": "S"
+    },
+    {
+      "char": "芝",
+      "grade": "S"
+    },
+    {
+      "char": "芯",
+      "grade": "S"
+    },
+    {
+      "char": "芳",
+      "grade": "S"
+    },
+    {
+      "char": "苗",
+      "grade": "S"
+    },
+    {
+      "char": "苛",
+      "grade": "S"
+    },
+    {
+      "char": "茂",
+      "grade": "S"
+    },
+    {
+      "char": "茎",
+      "grade": "S"
+    },
+    {
+      "char": "荒",
+      "grade": "S"
+    },
+    {
+      "char": "荘",
+      "grade": "S"
+    },
+    {
+      "char": "菊",
+      "grade": "S"
+    },
+    {
+      "char": "菌",
+      "grade": "S"
+    },
+    {
+      "char": "菓",
+      "grade": "S"
+    },
+    {
+      "char": "華",
+      "grade": "S"
+    },
+    {
+      "char": "萎",
+      "grade": "S"
+    },
+    {
+      "char": "葛",
+      "grade": "S"
+    },
+    {
+      "char": "葬",
+      "grade": "S"
+    },
+    {
+      "char": "蓄",
+      "grade": "S"
+    },
+    {
+      "char": "蓋",
+      "grade": "S"
+    },
+    {
+      "char": "蔑",
+      "grade": "S"
+    },
+    {
+      "char": "蔽",
+      "grade": "S"
+    },
+    {
+      "char": "薄",
+      "grade": "S"
+    },
+    {
+      "char": "薦",
+      "grade": "S"
+    },
+    {
+      "char": "薪",
+      "grade": "S"
+    },
+    {
+      "char": "薫",
+      "grade": "S"
+    },
+    {
+      "char": "藍",
+      "grade": "S"
+    },
+    {
+      "char": "藤",
+      "grade": "S"
+    },
+    {
+      "char": "藩",
+      "grade": "S"
+    },
+    {
+      "char": "藻",
+      "grade": "S"
+    },
+    {
+      "char": "虎",
+      "grade": "S"
+    },
+    {
+      "char": "虐",
+      "grade": "S"
+    },
+    {
+      "char": "虚",
+      "grade": "S"
+    },
+    {
+      "char": "虜",
+      "grade": "S"
+    },
+    {
+      "char": "虞",
+      "grade": "S"
+    },
+    {
+      "char": "虹",
+      "grade": "S"
+    },
+    {
+      "char": "蚊",
+      "grade": "S"
+    },
+    {
+      "char": "蛇",
+      "grade": "S"
+    },
+    {
+      "char": "蛍",
+      "grade": "S"
+    },
+    {
+      "char": "蛮",
+      "grade": "S"
+    },
+    {
+      "char": "蜂",
+      "grade": "S"
+    },
+    {
+      "char": "蜜",
+      "grade": "S"
+    },
+    {
+      "char": "融",
+      "grade": "S"
+    },
+    {
+      "char": "衝",
+      "grade": "S"
+    },
+    {
+      "char": "衡",
+      "grade": "S"
+    },
+    {
+      "char": "衰",
+      "grade": "S"
+    },
+    {
+      "char": "衷",
+      "grade": "S"
+    },
+    {
+      "char": "袋",
+      "grade": "S"
+    },
+    {
+      "char": "袖",
+      "grade": "S"
+    },
+    {
+      "char": "被",
+      "grade": "S"
+    },
+    {
+      "char": "裂",
+      "grade": "S"
+    },
+    {
+      "char": "裕",
+      "grade": "S"
+    },
+    {
+      "char": "裸",
+      "grade": "S"
+    },
+    {
+      "char": "裾",
+      "grade": "S"
+    },
+    {
+      "char": "褐",
+      "grade": "S"
+    },
+    {
+      "char": "褒",
+      "grade": "S"
+    },
+    {
+      "char": "襟",
+      "grade": "S"
+    },
+    {
+      "char": "襲",
+      "grade": "S"
+    },
+    {
+      "char": "覆",
+      "grade": "S"
+    },
+    {
+      "char": "覇",
+      "grade": "S"
+    },
+    {
+      "char": "触",
+      "grade": "S"
+    },
+    {
+      "char": "訂",
+      "grade": "S"
+    },
+    {
+      "char": "訃",
+      "grade": "S"
+    },
+    {
+      "char": "託",
+      "grade": "S"
+    },
+    {
+      "char": "訟",
+      "grade": "S"
+    },
+    {
+      "char": "訴",
+      "grade": "S"
+    },
+    {
+      "char": "診",
+      "grade": "S"
+    },
+    {
+      "char": "詐",
+      "grade": "S"
+    },
+    {
+      "char": "詔",
+      "grade": "S"
+    },
+    {
+      "char": "詠",
+      "grade": "S"
+    },
+    {
+      "char": "詣",
+      "grade": "S"
+    },
+    {
+      "char": "詮",
+      "grade": "S"
+    },
+    {
+      "char": "詰",
+      "grade": "S"
+    },
+    {
+      "char": "該",
+      "grade": "S"
+    },
+    {
+      "char": "詳",
+      "grade": "S"
+    },
+    {
+      "char": "誇",
+      "grade": "S"
+    },
+    {
+      "char": "誉",
+      "grade": "S"
+    },
+    {
+      "char": "誓",
+      "grade": "S"
+    },
+    {
+      "char": "誘",
+      "grade": "S"
+    },
+    {
+      "char": "誰",
+      "grade": "S"
+    },
+    {
+      "char": "請",
+      "grade": "S"
+    },
+    {
+      "char": "諦",
+      "grade": "S"
+    },
+    {
+      "char": "諧",
+      "grade": "S"
+    },
+    {
+      "char": "諭",
+      "grade": "S"
+    },
+    {
+      "char": "諮",
+      "grade": "S"
+    },
+    {
+      "char": "諾",
+      "grade": "S"
+    },
+    {
+      "char": "謀",
+      "grade": "S"
+    },
+    {
+      "char": "謁",
+      "grade": "S"
+    },
+    {
+      "char": "謄",
+      "grade": "S"
+    },
+    {
+      "char": "謎",
+      "grade": "S"
+    },
+    {
+      "char": "謙",
+      "grade": "S"
+    },
+    {
+      "char": "謡",
+      "grade": "S"
+    },
+    {
+      "char": "謹",
+      "grade": "S"
+    },
+    {
+      "char": "譜",
+      "grade": "S"
+    },
+    {
+      "char": "譲",
+      "grade": "S"
+    },
+    {
+      "char": "豚",
+      "grade": "S"
+    },
+    {
+      "char": "豪",
+      "grade": "S"
+    },
+    {
+      "char": "貌",
+      "grade": "S"
+    },
+    {
+      "char": "貞",
+      "grade": "S"
+    },
+    {
+      "char": "貢",
+      "grade": "S"
+    },
+    {
+      "char": "販",
+      "grade": "S"
+    },
+    {
+      "char": "貪",
+      "grade": "S"
+    },
+    {
+      "char": "貫",
+      "grade": "S"
+    },
+    {
+      "char": "貼",
+      "grade": "S"
+    },
+    {
+      "char": "賂",
+      "grade": "S"
+    },
+    {
+      "char": "賄",
+      "grade": "S"
+    },
+    {
+      "char": "賊",
+      "grade": "S"
+    },
+    {
+      "char": "賓",
+      "grade": "S"
+    },
+    {
+      "char": "賜",
+      "grade": "S"
+    },
+    {
+      "char": "賠",
+      "grade": "S"
+    },
+    {
+      "char": "賢",
+      "grade": "S"
+    },
+    {
+      "char": "賦",
+      "grade": "S"
+    },
+    {
+      "char": "賭",
+      "grade": "S"
+    },
+    {
+      "char": "購",
+      "grade": "S"
+    },
+    {
+      "char": "贈",
+      "grade": "S"
+    },
+    {
+      "char": "赦",
+      "grade": "S"
+    },
+    {
+      "char": "赴",
+      "grade": "S"
+    },
+    {
+      "char": "超",
+      "grade": "S"
+    },
+    {
+      "char": "越",
+      "grade": "S"
+    },
+    {
+      "char": "趣",
+      "grade": "S"
+    },
+    {
+      "char": "距",
+      "grade": "S"
+    },
+    {
+      "char": "践",
+      "grade": "S"
+    },
+    {
+      "char": "跡",
+      "grade": "S"
+    },
+    {
+      "char": "跳",
+      "grade": "S"
+    },
+    {
+      "char": "踊",
+      "grade": "S"
+    },
+    {
+      "char": "踏",
+      "grade": "S"
+    },
+    {
+      "char": "踪",
+      "grade": "S"
+    },
+    {
+      "char": "蹴",
+      "grade": "S"
+    },
+    {
+      "char": "躍",
+      "grade": "S"
+    },
+    {
+      "char": "軌",
+      "grade": "S"
+    },
+    {
+      "char": "軒",
+      "grade": "S"
+    },
+    {
+      "char": "軟",
+      "grade": "S"
+    },
+    {
+      "char": "軸",
+      "grade": "S"
+    },
+    {
+      "char": "較",
+      "grade": "S"
+    },
+    {
+      "char": "載",
+      "grade": "S"
+    },
+    {
+      "char": "輝",
+      "grade": "S"
+    },
+    {
+      "char": "輩",
+      "grade": "S"
+    },
+    {
+      "char": "轄",
+      "grade": "S"
+    },
+    {
+      "char": "辛",
+      "grade": "S"
+    },
+    {
+      "char": "辣",
+      "grade": "S"
+    },
+    {
+      "char": "辱",
+      "grade": "S"
+    },
+    {
+      "char": "込",
+      "grade": "S"
+    },
+    {
+      "char": "巡",
+      "grade": "S"
+    },
+    {
+      "char": "迅",
+      "grade": "S"
+    },
+    {
+      "char": "迎",
+      "grade": "S"
+    },
+    {
+      "char": "迫",
+      "grade": "S"
+    },
+    {
+      "char": "迭",
+      "grade": "S"
+    },
+    {
+      "char": "逃",
+      "grade": "S"
+    },
+    {
+      "char": "透",
+      "grade": "S"
+    },
+    {
+      "char": "逐",
+      "grade": "S"
+    },
+    {
+      "char": "逓",
+      "grade": "S"
+    },
+    {
+      "char": "途",
+      "grade": "S"
+    },
+    {
+      "char": "逝",
+      "grade": "S"
+    },
+    {
+      "char": "逮",
+      "grade": "S"
+    },
+    {
+      "char": "逸",
+      "grade": "S"
+    },
+    {
+      "char": "遂",
+      "grade": "S"
+    },
+    {
+      "char": "遅",
+      "grade": "S"
+    },
+    {
+      "char": "遇",
+      "grade": "S"
+    },
+    {
+      "char": "遍",
+      "grade": "S"
+    },
+    {
+      "char": "違",
+      "grade": "S"
+    },
+    {
+      "char": "遜",
+      "grade": "S"
+    },
+    {
+      "char": "遡",
+      "grade": "S"
+    },
+    {
+      "char": "遣",
+      "grade": "S"
+    },
+    {
+      "char": "遭",
+      "grade": "S"
+    },
+    {
+      "char": "遮",
+      "grade": "S"
+    },
+    {
+      "char": "遵",
+      "grade": "S"
+    },
+    {
+      "char": "遷",
+      "grade": "S"
+    },
+    {
+      "char": "避",
+      "grade": "S"
+    },
+    {
+      "char": "還",
+      "grade": "S"
+    },
+    {
+      "char": "那",
+      "grade": "S"
+    },
+    {
+      "char": "邦",
+      "grade": "S"
+    },
+    {
+      "char": "邪",
+      "grade": "S"
+    },
+    {
+      "char": "邸",
+      "grade": "S"
+    },
+    {
+      "char": "郊",
+      "grade": "S"
+    },
+    {
+      "char": "郎",
+      "grade": "S"
+    },
+    {
+      "char": "郭",
+      "grade": "S"
+    },
+    {
+      "char": "酌",
+      "grade": "S"
+    },
+    {
+      "char": "酎",
+      "grade": "S"
+    },
+    {
+      "char": "酔",
+      "grade": "S"
+    },
+    {
+      "char": "酢",
+      "grade": "S"
+    },
+    {
+      "char": "酪",
+      "grade": "S"
+    },
+    {
+      "char": "酬",
+      "grade": "S"
+    },
+    {
+      "char": "酵",
+      "grade": "S"
+    },
+    {
+      "char": "酷",
+      "grade": "S"
+    },
+    {
+      "char": "醒",
+      "grade": "S"
+    },
+    {
+      "char": "醜",
+      "grade": "S"
+    },
+    {
+      "char": "醸",
+      "grade": "S"
+    },
+    {
+      "char": "采",
+      "grade": "S"
+    },
+    {
+      "char": "釈",
+      "grade": "S"
+    },
+    {
+      "char": "釜",
+      "grade": "S"
+    },
+    {
+      "char": "釣",
+      "grade": "S"
+    },
+    {
+      "char": "鈍",
+      "grade": "S"
+    },
+    {
+      "char": "鈴",
+      "grade": "S"
+    },
+    {
+      "char": "鉛",
+      "grade": "S"
+    },
+    {
+      "char": "鉢",
+      "grade": "S"
+    },
+    {
+      "char": "銃",
+      "grade": "S"
+    },
+    {
+      "char": "銘",
+      "grade": "S"
+    },
+    {
+      "char": "鋭",
+      "grade": "S"
+    },
+    {
+      "char": "鋳",
+      "grade": "S"
+    },
+    {
+      "char": "錠",
+      "grade": "S"
+    },
+    {
+      "char": "錦",
+      "grade": "S"
+    },
+    {
+      "char": "錬",
+      "grade": "S"
+    },
+    {
+      "char": "錮",
+      "grade": "S"
+    },
+    {
+      "char": "錯",
+      "grade": "S"
+    },
+    {
+      "char": "鍋",
+      "grade": "S"
+    },
+    {
+      "char": "鍛",
+      "grade": "S"
+    },
+    {
+      "char": "鍵",
+      "grade": "S"
+    },
+    {
+      "char": "鎌",
+      "grade": "S"
+    },
+    {
+      "char": "鎖",
+      "grade": "S"
+    },
+    {
+      "char": "鎮",
+      "grade": "S"
+    },
+    {
+      "char": "鐘",
+      "grade": "S"
+    },
+    {
+      "char": "鑑",
+      "grade": "S"
+    },
+    {
+      "char": "閑",
+      "grade": "S"
+    },
+    {
+      "char": "閥",
+      "grade": "S"
+    },
+    {
+      "char": "閲",
+      "grade": "S"
+    },
+    {
+      "char": "闇",
+      "grade": "S"
+    },
+    {
+      "char": "闘",
+      "grade": "S"
+    },
+    {
+      "char": "阻",
+      "grade": "S"
+    },
+    {
+      "char": "附",
+      "grade": "S"
+    },
+    {
+      "char": "陣",
+      "grade": "S"
+    },
+    {
+      "char": "陥",
+      "grade": "S"
+    },
+    {
+      "char": "陪",
+      "grade": "S"
+    },
+    {
+      "char": "陰",
+      "grade": "S"
+    },
+    {
+      "char": "陳",
+      "grade": "S"
+    },
+    {
+      "char": "陵",
+      "grade": "S"
+    },
+    {
+      "char": "陶",
+      "grade": "S"
+    },
+    {
+      "char": "隅",
+      "grade": "S"
+    },
+    {
+      "char": "隆",
+      "grade": "S"
+    },
+    {
+      "char": "随",
+      "grade": "S"
+    },
+    {
+      "char": "隔",
+      "grade": "S"
+    },
+    {
+      "char": "隙",
+      "grade": "S"
+    },
+    {
+      "char": "隠",
+      "grade": "S"
+    },
+    {
+      "char": "隣",
+      "grade": "S"
+    },
+    {
+      "char": "隷",
+      "grade": "S"
+    },
+    {
+      "char": "隻",
+      "grade": "S"
+    },
+    {
+      "char": "雄",
+      "grade": "S"
+    },
+    {
+      "char": "雅",
+      "grade": "S"
+    },
+    {
+      "char": "雇",
+      "grade": "S"
+    },
+    {
+      "char": "雌",
+      "grade": "S"
+    },
+    {
+      "char": "離",
+      "grade": "S"
+    },
+    {
+      "char": "雰",
+      "grade": "S"
+    },
+    {
+      "char": "零",
+      "grade": "S"
+    },
+    {
+      "char": "雷",
+      "grade": "S"
+    },
+    {
+      "char": "需",
+      "grade": "S"
+    },
+    {
+      "char": "震",
+      "grade": "S"
+    },
+    {
+      "char": "霊",
+      "grade": "S"
+    },
+    {
+      "char": "霜",
+      "grade": "S"
+    },
+    {
+      "char": "霧",
+      "grade": "S"
+    },
+    {
+      "char": "露",
+      "grade": "S"
+    },
+    {
+      "char": "靴",
+      "grade": "S"
+    },
+    {
+      "char": "韓",
+      "grade": "S"
+    },
+    {
+      "char": "韻",
+      "grade": "S"
+    },
+    {
+      "char": "響",
+      "grade": "S"
+    },
+    {
+      "char": "頃",
+      "grade": "S"
+    },
+    {
+      "char": "項",
+      "grade": "S"
+    },
+    {
+      "char": "須",
+      "grade": "S"
+    },
+    {
+      "char": "頑",
+      "grade": "S"
+    },
+    {
+      "char": "頒",
+      "grade": "S"
+    },
+    {
+      "char": "頓",
+      "grade": "S"
+    },
+    {
+      "char": "頰",
+      "grade": "S"
+    },
+    {
+      "char": "頻",
+      "grade": "S"
+    },
+    {
+      "char": "頼",
+      "grade": "S"
+    },
+    {
+      "char": "顎",
+      "grade": "S"
+    },
+    {
+      "char": "顕",
+      "grade": "S"
+    },
+    {
+      "char": "顧",
+      "grade": "S"
+    },
+    {
+      "char": "飢",
+      "grade": "S"
+    },
+    {
+      "char": "飽",
+      "grade": "S"
+    },
+    {
+      "char": "飾",
+      "grade": "S"
+    },
+    {
+      "char": "餅",
+      "grade": "S"
+    },
+    {
+      "char": "餌",
+      "grade": "S"
+    },
+    {
+      "char": "餓",
+      "grade": "S"
+    },
+    {
+      "char": "駄",
+      "grade": "S"
+    },
+    {
+      "char": "駆",
+      "grade": "S"
+    },
+    {
+      "char": "駐",
+      "grade": "S"
+    },
+    {
+      "char": "駒",
+      "grade": "S"
+    },
+    {
+      "char": "騎",
+      "grade": "S"
+    },
+    {
+      "char": "騒",
+      "grade": "S"
+    },
+    {
+      "char": "騰",
+      "grade": "S"
+    },
+    {
+      "char": "驚",
+      "grade": "S"
+    },
+    {
+      "char": "骸",
+      "grade": "S"
+    },
+    {
+      "char": "髄",
+      "grade": "S"
+    },
+    {
+      "char": "髪",
+      "grade": "S"
+    },
+    {
+      "char": "鬱",
+      "grade": "S"
+    },
+    {
+      "char": "鬼",
+      "grade": "S"
+    },
+    {
+      "char": "魂",
+      "grade": "S"
+    },
+    {
+      "char": "魅",
+      "grade": "S"
+    },
+    {
+      "char": "魔",
+      "grade": "S"
+    },
+    {
+      "char": "鮮",
+      "grade": "S"
+    },
+    {
+      "char": "鯨",
+      "grade": "S"
+    },
+    {
+      "char": "鶏",
+      "grade": "S"
+    },
+    {
+      "char": "鶴",
+      "grade": "S"
+    },
+    {
+      "char": "麓",
+      "grade": "S"
+    },
+    {
+      "char": "麗",
+      "grade": "S"
+    },
+    {
+      "char": "麺",
+      "grade": "S"
+    },
+    {
+      "char": "麻",
+      "grade": "S"
+    },
+    {
+      "char": "墨",
+      "grade": "S"
+    },
+    {
+      "char": "鼓",
+      "grade": "S"
+    },
+    {
+      "char": "齢",
+      "grade": "S"
+    }
   ]
 }

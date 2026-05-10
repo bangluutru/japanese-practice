@@ -1,725 +1,1109 @@
 {
-  "generatedAt": "2026-05-10T05:54:04.702Z",
+  "generatedAt": "2026-05-10T09:21:45.139Z",
   "kanjivgDirScanned": "/Users/tranhaibang/.gemini/antigravity/scratch/practice-sheet-builder/public/kanjivg",
-  "totalSvgFilesFound": 222,
-  "skippedFiles": 176,
+  "totalSvgFilesFound": 6702,
+  "skippedFiles": 272,
   "skippedDetails": [
     {
+      "file": "00021.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0002c.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0002e.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00030.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00031.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00032.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00033.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00034.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00035.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00036.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00037.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00038.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00039.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0003a.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0003b.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0003f.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00041.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00042.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00043.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00044.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00045.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00046.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00047.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00048.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00049.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0004a.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0004b.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0004c.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0004d.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0004e.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0004f.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00050.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00051.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00052.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00053.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00054.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00055.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00056.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00057.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00058.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00059.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0005a.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00061.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00062.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00063.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00064.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00065.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00066.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00067.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00068.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00069.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0006a.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0006b.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0006c.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0006d.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0006e.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0006f.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00070.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00071.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00072.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00073.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00074.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00075.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00076.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00077.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00078.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "00079.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "0007a.svg",
+      "reason": "ASCII"
+    },
+    {
+      "file": "02e89.svg",
+      "reason": "non-kanji (U+02E89)"
+    },
+    {
+      "file": "02e8c.svg",
+      "reason": "non-kanji (U+02E8C)"
+    },
+    {
+      "file": "02e8d.svg",
+      "reason": "non-kanji (U+02E8D)"
+    },
+    {
+      "file": "02e95.svg",
+      "reason": "non-kanji (U+02E95)"
+    },
+    {
+      "file": "02e97.svg",
+      "reason": "non-kanji (U+02E97)"
+    },
+    {
+      "file": "02ea1.svg",
+      "reason": "non-kanji (U+02EA1)"
+    },
+    {
+      "file": "02ea2.svg",
+      "reason": "non-kanji (U+02EA2)"
+    },
+    {
+      "file": "02ea4.svg",
+      "reason": "non-kanji (U+02EA4)"
+    },
+    {
+      "file": "02ea6.svg",
+      "reason": "non-kanji (U+02EA6)"
+    },
+    {
+      "file": "02ea8.svg",
+      "reason": "non-kanji (U+02EA8)"
+    },
+    {
+      "file": "02ead.svg",
+      "reason": "non-kanji (U+02EAD)"
+    },
+    {
+      "file": "02ec3.svg",
+      "reason": "non-kanji (U+02EC3)"
+    },
+    {
+      "file": "02ecc.svg",
+      "reason": "non-kanji (U+02ECC)"
+    },
+    {
+      "file": "02ecf.svg",
+      "reason": "non-kanji (U+02ECF)"
+    },
+    {
+      "file": "02ed6.svg",
+      "reason": "non-kanji (U+02ED6)"
+    },
+    {
+      "file": "03001.svg",
+      "reason": "non-kanji (U+03001)"
+    },
+    {
+      "file": "03002.svg",
+      "reason": "non-kanji (U+03002)"
+    },
+    {
+      "file": "03005.svg",
+      "reason": "non-kanji (U+03005)"
+    },
+    {
+      "file": "03006.svg",
+      "reason": "non-kanji (U+03006)"
+    },
+    {
       "file": "03041.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03042.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03043.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03044.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03045.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03046.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03047.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03048.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03049.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0304a.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0304b.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0304c.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0304d.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0304e.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0304f.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03050.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03051.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03052.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03053.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03054.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03055.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03056.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03057.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03058.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03059.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0305a.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0305b.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0305c.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0305d.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0305e.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0305f.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03060.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03061.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03062.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03063.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03064.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03065.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03066.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03067.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03068.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03069.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0306a.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0306b.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0306c.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0306d.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0306e.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0306f.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03070.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03071.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03072.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03073.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03074.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03075.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03076.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03077.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03078.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03079.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0307a.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0307b.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0307c.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0307d.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0307e.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0307f.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03080.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03081.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03082.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03083.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03084.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03085.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03086.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03087.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03088.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03089.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0308a.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0308b.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0308c.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0308d.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0308e.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "0308f.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03090.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03091.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03092.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03093.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03094.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03095.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "03096.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "hiragana (kana pipeline)"
+    },
+    {
+      "file": "0309b.svg",
+      "reason": "hiragana (kana pipeline)"
+    },
+    {
+      "file": "0309c.svg",
+      "reason": "hiragana (kana pipeline)"
+    },
+    {
+      "file": "0309d.svg",
+      "reason": "hiragana (kana pipeline)"
+    },
+    {
+      "file": "0309e.svg",
+      "reason": "hiragana (kana pipeline)"
     },
     {
       "file": "030a1.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030a2.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030a3.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030a4.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030a5.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030a6.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030a7.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030a8.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030a9.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030aa.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ab.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ac.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ad.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ae.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030af.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030b0.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030b1.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030b2.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030b3.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030b4.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030b5.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030b6.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030b7.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030b8.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030b9.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ba.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030bb.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030bc.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030bd.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030be.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030bf.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030c0.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030c1.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030c2.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030c3.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030c4.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030c5.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030c6.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030c7.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030c8.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030c9.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ca.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030cb.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030cc.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030cd.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ce.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030cf.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030d0.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030d1.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030d2.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030d3.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030d4.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030d5.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030d6.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030d7.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030d8.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030d9.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030da.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030db.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030dc.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030dd.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030de.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030df.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030e0.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030e1.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030e2.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030e3.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030e4.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030e5.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030e6.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030e7.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030e8.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030e9.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ea.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030eb.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ec.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ed.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ee.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030ef.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030f0.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030f1.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030f2.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030f3.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030f4.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030f5.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030f6.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030f7.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030f8.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030f9.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
     },
     {
       "file": "030fa.svg",
-      "reason": "kana (U+3040–30FF) — handled by kana pipeline"
+      "reason": "katakana (kana pipeline)"
+    },
+    {
+      "file": "030fb.svg",
+      "reason": "katakana (kana pipeline)"
+    },
+    {
+      "file": "030fc.svg",
+      "reason": "katakana (kana pipeline)"
+    },
+    {
+      "file": "030fd.svg",
+      "reason": "katakana (kana pipeline)"
+    },
+    {
+      "file": "030fe.svg",
+      "reason": "katakana (kana pipeline)"
+    },
+    {
+      "file": "0ff01.svg",
+      "reason": "non-kanji (U+0FF01)"
     }
   ],
-  "validKanjiIndexed": 46,
-  "joyoSourceCount": 46,
+  "validKanjiIndexed": 6430,
+  "joyoSourceCount": 2136,
   "joyoCountExpected": 2136,
-  "joyoMatchedWithKanjiVg": 46,
+  "joyoMatchedWithKanjiVg": 2136,
   "joyoMissingSvg": [],
   "jlptCounts": {
-    "N5": 43,
-    "N4": 0,
-    "N3": 1,
-    "N2": 1,
-    "N1": 1
+    "N5": 103,
+    "N4": 181,
+    "N3": 739,
+    "N2": 408,
+    "N1": 799
   },
   "jlptMissingSvg": {
     "N5": [],
@@ -729,7 +1113,7 @@
     "N1": []
   },
   "duplicateJlptClassifications": [],
-  "otherKanjiVg": 0,
+  "otherKanjiVg": 4043,
   "notes": [
     "joyoKanji.json is a local subset — not the full 2136 Jouyou list.",
     "jlptKanji.json is a curated reference — not official JLPT data.",

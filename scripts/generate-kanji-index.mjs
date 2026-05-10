@@ -76,9 +76,20 @@ function hexToCodePoint(hex) {
   return parseInt(hex, 16);
 }
 
-/** Unicode ranges to skip (hiragana + katakana — handled by kana pipeline) */
-function isKanaCodePoint(cp) {
-  return (cp >= 0x3040 && cp <= 0x30FF);
+/**
+ * Returns true if a code point is a CJK kanji character we want to index.
+ * Includes: CJK Unified, CJK Extension A/B/C/D/E/F, CJK Compatibility Ideographs.
+ * Excludes: ASCII, Latin, Hiragana, Katakana, CJK Symbols, Bopomofo, etc.
+ */
+function isIndexableKanji(cp) {
+  return (
+    (cp >= 0x4E00 && cp <= 0x9FFF) ||   // CJK Unified Ideographs (main block ~20902 chars)
+    (cp >= 0x3400 && cp <= 0x4DBF) ||   // CJK Extension A
+    (cp >= 0xF900 && cp <= 0xFAFF) ||   // CJK Compatibility Ideographs
+    (cp >= 0x20000 && cp <= 0x2A6DF) || // CJK Extension B
+    (cp >= 0x2A700 && cp <= 0x2CEAF) || // CJK Extension C/D/E
+    (cp >= 0x2CEB0 && cp <= 0x2EBEF)    // CJK Extension F
+  );
 }
 
 /** Convert code point integer to 5-digit padded hex string */
@@ -130,9 +141,14 @@ for (const file of allSvgFiles) {
 
   const cp = hexToCodePoint(hexStr);
 
-  // Skip hiragana/katakana
-  if (isKanaCodePoint(cp)) {
-    skipped.push({ file, reason: 'kana (U+3040–30FF) — handled by kana pipeline' });
+  // Skip non-kanji code points
+  if (!isIndexableKanji(cp)) {
+    const rangeNote =
+      cp <= 0x007F ? 'ASCII' :
+      cp >= 0x3040 && cp <= 0x309F ? 'hiragana (kana pipeline)' :
+      cp >= 0x30A0 && cp <= 0x30FF ? 'katakana (kana pipeline)' :
+      `non-kanji (U+${hexStr.toUpperCase()})`;
+    skipped.push({ file, reason: rangeNote });
     continue;
   }
 
@@ -260,9 +276,8 @@ writeFileSync(join(OUT_DIR, 'generationReport.json'), JSON.stringify(generationR
 // ── Summary ───────────────────────────────────────────────────────────────────
 
 console.log('\n✅ Kanji Index Generation Complete\n');
-console.log(`  SVG files scanned : ${allSvgFiles.length}`);
-console.log(`  Kana skipped      : ${skipped.filter(s => s.reason.startsWith('kana')).length}`);
-console.log(`  Other skipped     : ${skipped.filter(s => !s.reason.startsWith('kana')).length}`);
+console.log(`  SVG files scanned     : ${allSvgFiles.length}`);
+console.log(`  Non-kanji skipped     : ${skipped.length}`);
 console.log(`  Kanji indexed     : ${entries.length}`);
 console.log(`  Jouyou matched    : ${kanjiGroups.jouyou}`);
 console.log(`  JLPT N5           : ${kanjiGroups.jlptN5}`);
