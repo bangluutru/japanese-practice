@@ -101,12 +101,17 @@ export function generateRowCells(
     }
   }
 
-  // 6. Blank practice cells — fill remaining
+  // 6. Blank practice cells (configured amount)
   const blanksToAdd = Math.min(
     settings.blankPracticeCells,
     maxCells - cells.length
   );
   for (let i = 0; i < blanksToAdd; i++) {
+    cells.push({ type: "blank" });
+  }
+
+  // 7. Fill any remaining slots so every row has exactly maxCells cells
+  while (cells.length < maxCells) {
     cells.push({ type: "blank" });
   }
 

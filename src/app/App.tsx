@@ -392,8 +392,8 @@ const App: React.FC = () => {
           </div>
         )}
 
-        {/* Preview area */}
-        <div className="flex-1 overflow-auto p-6 flex flex-col items-center gap-6">
+        {/* Preview area — scales A4 SVG to fit within the available space */}
+        <div className="flex-1 overflow-auto p-4 flex flex-col items-center gap-6">
           {practiceList.length === 0 ? (
             <div className="flex-1 flex flex-col items-center justify-center gap-4 text-center">
               <div className="w-20 h-20 rounded-2xl bg-[var(--color-surface-alt)] border border-[var(--color-border)] flex items-center justify-center text-4xl">
@@ -410,12 +410,22 @@ const App: React.FC = () => {
             </div>
           ) : (
             pages.map((page, pageIdx) => (
-              <div key={pageIdx} className="a4-page-shadow rounded-lg overflow-hidden">
+              <div
+                key={pageIdx}
+                className="a4-page-shadow rounded-lg overflow-hidden"
+                style={{
+                  /* Scale SVG to fit preview: width-based scaling with auto height.
+                     The SVG has a viewBox so width:100% + height:auto maintains A4 ratio. */
+                  width: "100%",
+                  maxWidth: settings.orientation === "portrait" ? "620px" : "860px",
+                }}
+              >
                 <WorksheetSvg
                   ref={(el: SVGSVGElement | null) => { svgRefs.current[pageIdx] = el; }}
                   page={page}
                   settings={settings}
                   strokeDataMap={strokeDataMap}
+                  style={{ width: "100%", height: "auto", display: "block" }}
                 />
               </div>
             ))

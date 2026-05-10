@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import type React from "react";
 import type { WorksheetPage, WorksheetSettings } from "./worksheetTypes";
 import type { CharacterStrokeData } from "../stroke/strokeTypes";
 import { getPageDimensions, getPrintableArea, getRowHeightMm } from "./layoutEngine";
@@ -18,10 +19,11 @@ interface WorksheetSvgProps {
   settings: WorksheetSettings;
   strokeDataMap: Map<string, CharacterStrokeData | null>;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export const WorksheetSvg = forwardRef<SVGSVGElement, WorksheetSvgProps>(
-  ({ page, settings, strokeDataMap, className }, ref) => {
+  ({ page, settings, strokeDataMap, className, style }, ref) => {
     const dims = getPageDimensions(settings);
     const printable = getPrintableArea(settings);
     const cellSize = settings.cellSizeMm;
@@ -37,7 +39,7 @@ export const WorksheetSvg = forwardRef<SVGSVGElement, WorksheetSvgProps>(
         height={`${dims.heightMm}mm`}
         viewBox={`0 0 ${dims.widthMm} ${dims.heightMm}`}
         className={className}
-        style={{ background: "white" }}
+        style={{ background: "white", ...style }}
       >
         {/* Page background */}
         <rect x={0} y={0} width={dims.widthMm} height={dims.heightMm} fill="white" />

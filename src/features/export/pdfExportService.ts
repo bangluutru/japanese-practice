@@ -30,35 +30,40 @@ export async function exportToPdf(
     }
 
     const svgEl = svgElements[i];
-    const imageData = await svgToImage(svgEl, dims.widthMm, dims.heightMm);
+    const { dataUrl, format } = await svgToImage(svgEl, dims.widthMm, dims.heightMm);
 
-    pdf.addImage(imageData, "PNG", 0, 0, dims.widthMm, dims.heightMm);
+    pdf.addImage(dataUrl, format, 0, 0, dims.widthMm, dims.heightMm);
   }
 
   pdf.save(filename);
 }
 
-/** Convert SVG element to high-resolution image data URL */
+/** Convert SVG element to image data URL for embedding in PDF.
+ *  Uses 200 DPI + JPEG (quality 0.88) for a good balance of print quality
+ *  and file size (~70-80% smaller than 300 DPI PNG). */
 async function svgToImage(
   svgEl: SVGSVGElement,
   widthMm: number,
   heightMm: number
-): Promise<string> {
-  // High DPI for print quality
-  const dpi = 300;
+): Promise<{ dataUrl: string; format: "JPEG" }> {
+  const dpi = 200;
   const mmToInch = 25.4;
   const widthPx = Math.round((widthMm / mmToInch) * dpi);
   const heightPx = Math.round((heightMm / mmToInch) * dpi);
 
-  // Serialize SVG
-  const serializer = new XMLSerializer();
-  const svgString = serializer.serializeToString(svgEl);
+  // Clone SVG and ensure it has explicit mm dimensions for correct rendering
+  const clone = svgEl.cloneNode(true) as SVGSVGElement;
+  clone.removeAttribute("style");
+  clone.setAttribute("width", `${widthMm}mm`);
+  clone.setAttribute("height", `${heightMm}mm`);
 
-  // Create blob URL
+  const serializer = new XMLSerializer();
+  const svgString = serializer.serializeToString(clone);
+
   const blob = new Blob([svgString], { type: "image/svg+xml;charset=utf-8" });
   const url = URL.createObjectURL(blob);
 
-  return new Promise<string>((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     const img = new Image();
     img.onload = () => {
       const canvas = document.createElement("canvas");
@@ -72,16 +77,13 @@ async function svgToImage(
         return;
       }
 
-      // White background
       ctx.fillStyle = "white";
       ctx.fillRect(0, 0, widthPx, heightPx);
-
-      // Draw SVG
       ctx.drawImage(img, 0, 0, widthPx, heightPx);
 
-      const dataUrl = canvas.toDataURL("image/png", 1.0);
+      const dataUrl = canvas.toDataURL("image/jpeg", 0.88);
       URL.revokeObjectURL(url);
-      resolve(dataUrl);
+      resolve({ dataUrl, format: "JPEG" });
     };
 
     img.onerror = () => {
