@@ -1,5 +1,5 @@
-import React, { useState, useCallback, useEffect, useRef } from "react";
-import type { JapaneseCharacterEntry, CharacterCategory } from "../features/characters/characterTypes";
+import React, { useState, useCallback, useEffect, useRef, useMemo } from "react";
+import type { JapaneseCharacterEntry, CharacterCategory, KanjiGroupFilter } from "../features/characters/characterTypes";
 import type { WorksheetSettings, WorksheetPage } from "../features/worksheet/worksheetTypes";
 import type { CharacterStrokeData } from "../features/stroke/strokeTypes";
 import { searchCharacters } from "../features/characters/characterSearch";
@@ -11,6 +11,9 @@ import { builtinFonts } from "../features/fonts/builtinFonts";
 import { exportToPdf } from "../features/export/pdfExportService";
 import { WorksheetSvg } from "../features/worksheet/WorksheetSvg";
 import { hasKanaStrokeData } from "../features/stroke/kanaStrokeData";
+import { getKanjiByGroup, getKanjiGroupCounts, KANJI_GROUP_OPTIONS } from "../features/characters/kanjiGroups";
+
+const DISPLAY_LIMIT = 300;
 
 // ============================================================
 // App — Main Application Component
@@ -19,6 +22,7 @@ import { hasKanaStrokeData } from "../features/stroke/kanaStrokeData";
 const App: React.FC = () => {
   // State
   const [category, setCategory] = useState<CharacterCategory>("hiragana");
+  const [kanjiGroup, setKanjiGroup] = useState<KanjiGroupFilter>("jlpt-n5");
   const [searchQuery, setSearchQuery] = useState("");
   const [practiceList, setPracticeList] = useState<JapaneseCharacterEntry[]>([]);
   const [manualInput, setManualInput] = useState("");
@@ -30,8 +34,23 @@ const App: React.FC = () => {
   const [warnings, setWarnings] = useState<string[]>([]);
   const svgRefs = useRef<(SVGSVGElement | null)[]>([]);
 
+  // Kanji group counts (stable, computed once)
+  const kanjiCounts = useMemo(() => getKanjiGroupCounts(), []);
+
+  // Active pool: filtered by kanjiGroup when in kanji category
+  const activePool = useMemo(() => {
+    if (category !== "kanji") return undefined;
+    return getKanjiByGroup(kanjiGroup);
+  }, [category, kanjiGroup]);
+
   // Search results
-  const searchResults = searchCharacters(searchQuery, category);
+  const allSearchResults = useMemo(
+    () => searchCharacters(searchQuery, category, activePool),
+    [searchQuery, category, activePool]
+  );
+
+  const searchResults = allSearchResults.slice(0, DISPLAY_LIMIT);
+  const isLimited = allSearchResults.length > DISPLAY_LIMIT;
 
   // Generate worksheet whenever practice list or settings change
   useEffect(() => {
@@ -165,7 +184,7 @@ const App: React.FC = () => {
           {categories.map((cat) => (
             <button
               key={cat.key}
-              onClick={() => { setCategory(cat.key); setSearchQuery(""); }}
+              onClick={() => { setCategory(cat.key); setSearchQuery(""); setKanjiGroup("jlpt-n5"); }}
               className={`flex-1 py-2 px-1 rounded-lg text-xs font-medium transition-all ${
                 category === cat.key
                   ? "bg-indigo-600 text-white shadow-md"
@@ -180,6 +199,41 @@ const App: React.FC = () => {
           ))}
         </div>
 
+        {/* Kanji group sub-filter (visible only in kanji category) */}
+        {category === "kanji" && (
+          <div className="px-3 py-2 border-b border-[var(--color-border)] bg-[var(--color-surface)]">
+            <p className="text-[10px] text-[var(--color-text-muted)] mb-1.5 font-medium uppercase tracking-wide">
+              Kanji Level
+            </p>
+            <div className="flex flex-wrap gap-1">
+              {KANJI_GROUP_OPTIONS.map((opt) => {
+                const count = kanjiCounts[opt.countKey];
+                const isActive = kanjiGroup === opt.key;
+                return (
+                  <button
+                    key={opt.key}
+                    onClick={() => { setKanjiGroup(opt.key); setSearchQuery(""); }}
+                    className={`px-2 py-0.5 rounded text-[10px] font-medium transition-all ${
+                      isActive
+                        ? "bg-indigo-600 text-white"
+                        : count === 0
+                          ? "text-[var(--color-text-muted)] opacity-40 cursor-default"
+                          : "text-[var(--color-text-secondary)] hover:bg-[var(--color-surface-hover)] border border-[var(--color-border)]"
+                    }`}
+                    disabled={count === 0 && !isActive}
+                    title={`${opt.label}: ${count} kanji`}
+                  >
+                    {opt.label}
+                    <span className={`ml-1 ${isActive ? "opacity-80" : "opacity-60"}`}>
+                      ({count})
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Search box */}
         <div className="p-3 border-b border-[var(--color-border)]">
           <div className="relative">
@@ -187,7 +241,7 @@ const App: React.FC = () => {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search: あ, a, ka, kanji..."
+              placeholder="Search: あ, a, ka, n5, joyo..."
               className="w-full px-3 py-2 pl-9 rounded-lg bg-[var(--color-surface)] border border-[var(--color-border)] text-sm text-[var(--color-text)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:border-indigo-500 transition-colors"
             />
             <svg className="absolute left-3 top-2.5 w-4 h-4 text-[var(--color-text-muted)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -195,7 +249,9 @@ const App: React.FC = () => {
             </svg>
           </div>
           <p className="text-[10px] text-[var(--color-text-muted)] mt-1.5">
-            {searchResults.length} character{searchResults.length !== 1 ? "s" : ""} found
+            {isLimited
+              ? `Showing first ${DISPLAY_LIMIT} of ${allSearchResults.length} — use search to narrow`
+              : `${searchResults.length} character${searchResults.length !== 1 ? "s" : ""} found`}
           </p>
         </div>
 

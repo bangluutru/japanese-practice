@@ -1,0 +1,17 @@
+{
+  "source": "Curated JLPT reference list",
+  "note": "JLPT level assignments are reference classifications only. JLPT does not publish an exhaustive official kanji list. This file is a local subset matching available KanjiVG SVG files. A kanji should appear in at most one level; duplicates are reported by the generation script.",
+  "levels": {
+    "N5": [
+      "一", "七", "万", "三", "上", "下", "中", "九", "二", "五",
+      "人", "先", "八", "六", "十", "千", "口", "右", "四", "土",
+      "大", "学", "小", "山", "川", "左", "年", "手", "日", "月",
+      "木", "本", "校", "水", "火", "生", "田", "百", "目", "耳",
+      "語", "足", "金"
+    ],
+    "N4": [],
+    "N3": ["感"],
+    "N2": ["張"],
+    "N1": ["緊"]
+  }
+}

@@ -5,35 +5,25 @@ import { getCharactersByCategory } from "./characterLibrary";
 // Character Search
 // ============================================================
 
-/** Search characters across char, reading, romaji, group, and tags */
+/** Search characters across char, reading, romaji, group, tags, and codePointHex.
+ *  Pass a custom `pool` to search within a pre-filtered set (e.g. a Kanji group). */
 export function searchCharacters(
   query: string,
-  category: CharacterCategory
+  category: CharacterCategory,
+  pool?: JapaneseCharacterEntry[]
 ): JapaneseCharacterEntry[] {
   const trimmed = query.trim().toLowerCase();
-  if (!trimmed) return getCharactersByCategory(category);
+  const activePool = pool ?? getCharactersByCategory(category);
+  if (!trimmed) return activePool;
 
-  const pool = getCharactersByCategory(category);
-
-  return pool.filter((entry) => {
-    // Match char exactly
+  return activePool.filter((entry) => {
     if (entry.char === trimmed) return true;
-
-    // Match reading
     if (entry.reading && entry.reading.toLowerCase().includes(trimmed)) return true;
-
-    // Match romaji
     if (entry.romaji && entry.romaji.toLowerCase().includes(trimmed)) return true;
-
-    // Match group
     if (entry.group && entry.group.toLowerCase().includes(trimmed)) return true;
-
-    // Match tags
     if (entry.tags && entry.tags.some((t) => t.toLowerCase().includes(trimmed))) return true;
-
-    // Match id
     if (entry.id.toLowerCase().includes(trimmed)) return true;
-
+    if (entry.codePointHex && entry.codePointHex.includes(trimmed)) return true;
     return false;
   });
 }

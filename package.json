@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "typecheck": "tsc -b --noEmit",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:kanji": "node scripts/generate-kanji-index.mjs",
+    "validate:kanji": "node scripts/validate-kanji-data.mjs"
   },
   "dependencies": {
     "jspdf": "^4.2.1",
