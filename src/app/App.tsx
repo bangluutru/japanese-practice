@@ -414,10 +414,10 @@ const App: React.FC = () => {
                 key={pageIdx}
                 className="a4-page-shadow rounded-lg overflow-hidden"
                 style={{
-                  /* Scale SVG to fit preview: width-based scaling with auto height.
-                     The SVG has a viewBox so width:100% + height:auto maintains A4 ratio. */
                   width: "100%",
                   maxWidth: settings.orientation === "portrait" ? "620px" : "860px",
+                  aspectRatio: settings.orientation === "portrait" ? "210 / 297" : "297 / 210",
+                  flexShrink: 0,
                 }}
               >
                 <WorksheetSvg
@@ -425,7 +425,7 @@ const App: React.FC = () => {
                   page={page}
                   settings={settings}
                   strokeDataMap={strokeDataMap}
-                  style={{ width: "100%", height: "auto", display: "block" }}
+                  style={{ width: "100%", height: "100%", display: "block" }}
                 />
               </div>
             ))
