@@ -84,8 +84,9 @@ export function generateWorksheetRow(
       ? totalStrokes
       : Math.min(settings.maxProgressiveCells, totalStrokes);
 
-  // Mode is determined by how many steps the user wants to show
-  const useDoubleRow = maxSteps > singleRowCapacity;
+  // Mode is determined by actual stroke count, not the user-capped maxSteps.
+  // A 14-stroke kanji always uses double-row layout even if maxProgressiveCells=8.
+  const useDoubleRow = totalStrokes > singleRowCapacity;
   const maxCapacity = useDoubleRow ? doubleRowCapacity : singleRowCapacity;
   const strokeStepCount = Math.min(maxSteps, maxCapacity);
 

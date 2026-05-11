@@ -12,7 +12,7 @@ export const defaultSettings: WorksheetSettings = {
   cellSizeMm: 18,
   blankPracticeCells: 3,
   traceCells: 1,
-  maxProgressiveCells: 8,
+  maxProgressiveCells: "all",
   showStrokeNumbers: true,
   traceOpacity: 0.22,
   guideLineOpacity: 0.45,
