@@ -11,7 +11,7 @@ export const defaultSettings: WorksheetSettings = {
   layoutMode: "one-character-per-row",
   cellSizeMm: 18,
   blankPracticeCells: 3,
-  traceCells: 1,
+  traceCells: 3,
   maxProgressiveCells: "all",
   showStrokeNumbers: true,
   traceOpacity: 0.22,
