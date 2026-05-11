@@ -2,16 +2,20 @@ import { forwardRef } from "react";
 import type React from "react";
 import type { WorksheetPage, WorksheetSettings } from "./worksheetTypes";
 import type { CharacterStrokeData } from "../stroke/strokeTypes";
-import { getPageDimensions, getPrintableArea, getRowHeightMm } from "./layoutEngine";
+import type { JapaneseCharacterEntry } from "../characters/characterTypes";
+import {
+  getPageDimensions,
+  getPrintableArea,
+  getRowHeightMm,
+  getHeaderHeightMm,
+} from "./layoutEngine";
 import { GridGuidesSvg } from "./cells/GridGuidesSvg";
-import { FontSampleCellSvg } from "./cells/FontSampleCellSvg";
 import { TraceCellSvg } from "./cells/TraceCellSvg";
-import { StrokeOrderCellSvg } from "./cells/StrokeOrderCellSvg";
-import { ProgressiveStrokeCellSvg } from "./cells/ProgressiveStrokeCellSvg";
-import { MissingDataCellSvg } from "./cells/MissingDataCellSvg";
 
 // ============================================================
-// WorksheetSvg — Renders a single A4 page as SVG
+// WorksheetSvg — Two-row layout per character
+//   Header row: reading label + progressive stroke steps
+//   Practice row: bold reference + faded trace cells + blank cells
 // ============================================================
 
 interface WorksheetSvgProps {
@@ -22,14 +26,15 @@ interface WorksheetSvgProps {
   style?: React.CSSProperties;
 }
 
+const HEADER_PRACTICE_GAP = 0.5; // mm gap between header and practice sub-rows
+
 export const WorksheetSvg = forwardRef<SVGSVGElement, WorksheetSvgProps>(
   ({ page, settings, strokeDataMap, className, style }, ref) => {
     const dims = getPageDimensions(settings);
     const printable = getPrintableArea(settings);
     const cellSize = settings.cellSizeMm;
     const rowHeight = getRowHeightMm(settings);
-
-    const titleY = printable.y + 4;
+    const headerH = getHeaderHeightMm(settings);
 
     return (
       <svg
@@ -47,7 +52,7 @@ export const WorksheetSvg = forwardRef<SVGSVGElement, WorksheetSvgProps>(
         {/* Title */}
         <text
           x={dims.widthMm / 2}
-          y={titleY}
+          y={printable.y + 4}
           textAnchor="middle"
           fontSize={3.5}
           fill="#666666"
@@ -56,155 +61,71 @@ export const WorksheetSvg = forwardRef<SVGSVGElement, WorksheetSvgProps>(
           Japanese Writing Practice — Page {page.pageIndex + 1}
         </text>
 
-        {/* Rows */}
+        {/* Character rows */}
         {page.rows.map((row, rowIdx) => {
-          const rowY = printable.y + 8 + rowIdx * rowHeight;
+          const blockY = printable.y + 8 + rowIdx * rowHeight;
+          const practiceY = blockY + headerH + HEADER_PRACTICE_GAP;
           const strokeData = strokeDataMap.get(row.character.char) ?? null;
 
           return (
             <g key={`row-${rowIdx}`}>
-              {row.cells.map((cell, cellIdx) => {
-                const cellX = printable.x + cellIdx * cellSize;
+              {/* ── HEADER ROW: reading label + stroke progression ── */}
 
-                switch (cell.type) {
-                  case "label":
-                    return (
-                      <g key={`cell-${cellIdx}`}>
-                        <rect
-                          x={cellX}
-                          y={rowY}
-                          width={cellSize}
-                          height={cellSize}
-                          fill="#f8f9fa"
-                          stroke="#666666"
-                          strokeWidth={0.3}
-                        />
-                        <text
-                          x={cellX + cellSize / 2}
-                          y={rowY + cellSize * 0.42}
-                          textAnchor="middle"
-                          dominantBaseline="central"
-                          fontSize={cellSize * 0.45}
-                          fill="#222222"
-                          fontFamily="'Noto Sans JP', sans-serif"
-                          fontWeight="700"
-                        >
-                          {cell.character!.char}
-                        </text>
-                        {cell.character!.romaji && (
-                          <text
-                            x={cellX + cellSize / 2}
-                            y={rowY + cellSize * 0.78}
-                            textAnchor="middle"
-                            dominantBaseline="central"
-                            fontSize={cellSize * 0.14}
-                            fill="#888888"
-                            fontFamily="Inter, sans-serif"
-                          >
-                            {cell.character!.romaji}
-                          </text>
-                        )}
-                      </g>
-                    );
+              <HeaderLabelCell
+                x={printable.x}
+                y={blockY}
+                width={cellSize}
+                height={headerH}
+                character={row.character}
+                strokeCount={strokeData?.strokes.length ?? null}
+              />
 
-                  case "font-sample":
-                    return (
-                      <FontSampleCellSvg
-                        key={`cell-${cellIdx}`}
-                        x={cellX}
-                        y={rowY}
-                        size={cellSize}
-                        character={cell.character!}
-                        fontFamily={settings.selectedFontFamily}
-                        guideLineOpacity={settings.guideLineOpacity}
-                      />
-                    );
+              {strokeData &&
+                Array.from({ length: row.strokeStepCount }, (_, i) => (
+                  <HeaderStrokeStepCell
+                    key={`hstep-${i}`}
+                    x={printable.x + (i + 1) * cellSize}
+                    y={blockY}
+                    width={cellSize}
+                    height={headerH}
+                    strokeData={strokeData}
+                    step={i + 1}
+                    showNumbers={settings.showStrokeNumbers}
+                  />
+                ))}
 
-                  case "stroke-order-full":
-                    if (strokeData) {
-                      return (
-                        <StrokeOrderCellSvg
-                          key={`cell-${cellIdx}`}
-                          x={cellX}
-                          y={rowY}
-                          size={cellSize}
-                          strokeData={strokeData}
-                          showNumbers={settings.showStrokeNumbers}
-                          guideLineOpacity={settings.guideLineOpacity}
-                        />
-                      );
-                    }
-                    return (
-                      <MissingDataCellSvg
-                        key={`cell-${cellIdx}`}
-                        x={cellX}
-                        y={rowY}
-                        size={cellSize}
-                        character={cell.character!}
-                        reason="No stroke data"
-                        guideLineOpacity={settings.guideLineOpacity}
-                      />
-                    );
+              {/* ── PRACTICE ROW: reference + trace + blank ── */}
 
-                  case "progressive-stroke":
-                    if (strokeData) {
-                      return (
-                        <ProgressiveStrokeCellSvg
-                          key={`cell-${cellIdx}`}
-                          x={cellX}
-                          y={rowY}
-                          size={cellSize}
-                          strokeData={strokeData}
-                          step={cell.step!}
-                          showNumbers={settings.showStrokeNumbers}
-                          guideLineOpacity={settings.guideLineOpacity}
-                        />
-                      );
-                    }
-                    return null;
+              <ReferenceCellSvg
+                x={printable.x}
+                y={practiceY}
+                size={cellSize}
+                character={row.character}
+                fontFamily={settings.selectedFontFamily}
+              />
 
-                  case "trace":
-                    return (
-                      <TraceCellSvg
-                        key={`cell-${cellIdx}`}
-                        x={cellX}
-                        y={rowY}
-                        size={cellSize}
-                        character={cell.character!}
-                        fontFamily={settings.selectedFontFamily}
-                        traceOpacity={settings.traceOpacity}
-                        guideLineOpacity={settings.guideLineOpacity}
-                      />
-                    );
+              {Array.from({ length: row.traceCellCount }, (_, i) => (
+                <TraceCellSvg
+                  key={`trace-${i}`}
+                  x={printable.x + (i + 1) * cellSize}
+                  y={practiceY}
+                  size={cellSize}
+                  character={row.character}
+                  fontFamily={settings.selectedFontFamily}
+                  traceOpacity={settings.traceOpacity}
+                  guideLineOpacity={settings.guideLineOpacity}
+                />
+              ))}
 
-                  case "blank":
-                    return (
-                      <GridGuidesSvg
-                        key={`cell-${cellIdx}`}
-                        x={cellX}
-                        y={rowY}
-                        size={cellSize}
-                        opacity={settings.guideLineOpacity}
-                      />
-                    );
-
-                  case "missing-data":
-                    return (
-                      <MissingDataCellSvg
-                        key={`cell-${cellIdx}`}
-                        x={cellX}
-                        y={rowY}
-                        size={cellSize}
-                        character={cell.character!}
-                        reason={cell.reason || "Missing data"}
-                        guideLineOpacity={settings.guideLineOpacity}
-                      />
-                    );
-
-                  default:
-                    return null;
-                }
-              })}
+              {Array.from({ length: row.blankCellCount }, (_, i) => (
+                <GridGuidesSvg
+                  key={`blank-${i}`}
+                  x={printable.x + (row.traceCellCount + 1 + i) * cellSize}
+                  y={practiceY}
+                  size={cellSize}
+                  opacity={settings.guideLineOpacity}
+                />
+              ))}
             </g>
           );
         })}
@@ -226,3 +147,192 @@ export const WorksheetSvg = forwardRef<SVGSVGElement, WorksheetSvgProps>(
 );
 
 WorksheetSvg.displayName = "WorksheetSvg";
+
+// ============================================================
+// Header: reading label cell
+// ============================================================
+
+interface HeaderLabelCellProps {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  character: JapaneseCharacterEntry;
+  strokeCount: number | null;
+}
+
+const HeaderLabelCell: React.FC<HeaderLabelCellProps> = ({
+  x,
+  y,
+  width,
+  height,
+  character,
+  strokeCount,
+}) => {
+  const reading = character.romaji ?? character.char;
+  const hasCount = strokeCount !== null;
+
+  return (
+    <g>
+      <rect
+        x={x}
+        y={y}
+        width={width}
+        height={height}
+        fill="#f0effe"
+        stroke="#c9c5d0"
+        strokeWidth={0.25}
+      />
+      <text
+        x={x + width / 2}
+        y={y + height * (hasCount ? 0.38 : 0.5)}
+        textAnchor="middle"
+        dominantBaseline="central"
+        fontSize={height * 0.38}
+        fill="#444444"
+        fontFamily="Inter, sans-serif"
+        fontStyle="italic"
+      >
+        {reading}
+      </text>
+      {hasCount && (
+        <text
+          x={x + width / 2}
+          y={y + height * 0.78}
+          textAnchor="middle"
+          dominantBaseline="central"
+          fontSize={height * 0.28}
+          fill="#888888"
+          fontFamily="Inter, sans-serif"
+        >
+          {strokeCount}画
+        </text>
+      )}
+    </g>
+  );
+};
+
+// ============================================================
+// Header: progressive stroke step mini cell
+// ============================================================
+
+interface HeaderStrokeStepCellProps {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  strokeData: CharacterStrokeData;
+  step: number;
+  showNumbers: boolean;
+}
+
+const HeaderStrokeStepCell: React.FC<HeaderStrokeStepCellProps> = ({
+  x,
+  y,
+  width,
+  height,
+  strokeData,
+  step,
+  showNumbers,
+}) => {
+  const vbParts = strokeData.viewBox.split(" ").map(Number);
+  const vbW = vbParts[2] || 109;
+  const vbH = vbParts[3] || 109;
+
+  const padding = height * 0.07;
+  const drawW = width - 2 * padding;
+  const drawH = height - 2 * padding;
+  const scale = Math.min(drawW / vbW, drawH / vbH);
+
+  const offsetX = x + padding + (drawW - vbW * scale) / 2;
+  const offsetY = y + padding + (drawH - vbH * scale) / 2;
+
+  return (
+    <g>
+      <rect
+        x={x}
+        y={y}
+        width={width}
+        height={height}
+        fill="white"
+        stroke="#c9c5d0"
+        strokeWidth={0.2}
+      />
+      <g transform={`translate(${offsetX}, ${offsetY}) scale(${scale})`}>
+        {strokeData.strokes.slice(0, step).map((stroke, idx) => {
+          const isNew = idx === step - 1;
+          return (
+            <path
+              key={stroke.id}
+              d={stroke.d}
+              fill="none"
+              stroke={isNew ? "#e53e3e" : "#555555"}
+              strokeWidth={isNew ? 5 : 3.5}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              opacity={isNew ? 1 : 0.5}
+            />
+          );
+        })}
+      </g>
+      {showNumbers && (
+        <text
+          x={x + width - 1.2}
+          y={y + 1.2}
+          textAnchor="end"
+          dominantBaseline="hanging"
+          fontSize={height * 0.3}
+          fill="#e53e3e"
+          fontFamily="Inter, sans-serif"
+          fontWeight="600"
+        >
+          {step}
+        </text>
+      )}
+    </g>
+  );
+};
+
+// ============================================================
+// Practice row: bold reference character cell
+// ============================================================
+
+interface ReferenceCellSvgProps {
+  x: number;
+  y: number;
+  size: number;
+  character: JapaneseCharacterEntry;
+  fontFamily: string;
+}
+
+const ReferenceCellSvg: React.FC<ReferenceCellSvgProps> = ({
+  x,
+  y,
+  size,
+  character,
+  fontFamily,
+}) => (
+  <g>
+    <rect
+      x={x}
+      y={y}
+      width={size}
+      height={size}
+      fill="#f0effe"
+      stroke="#999999"
+      strokeWidth={0.35}
+    />
+    <text
+      x={x + size / 2}
+      y={y + size / 2}
+      textAnchor="middle"
+      dominantBaseline="central"
+      fontSize={size * 0.72}
+      fill="#1a1a2e"
+      fontFamily={fontFamily}
+      fontWeight="700"
+    >
+      {character.char}
+    </text>
+  </g>
+);

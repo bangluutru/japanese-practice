@@ -25,25 +25,14 @@ export interface WorksheetSettings {
   selectedFontFamily: string;
 }
 
-export type WorksheetCellType =
-  | "label"
-  | "font-sample"
-  | "stroke-order-full"
-  | "progressive-stroke"
-  | "trace"
-  | "blank"
-  | "missing-data";
-
-export interface WorksheetCell {
-  type: WorksheetCellType;
-  character?: JapaneseCharacterEntry;
-  step?: number; // for progressive stroke
-  reason?: string; // for missing-data
-}
-
 export interface WorksheetRow {
   character: JapaneseCharacterEntry;
-  cells: WorksheetCell[];
+  /** Number of progressive stroke steps shown in the header row (0 = no stroke data) */
+  strokeStepCount: number;
+  /** Number of faded trace cells in the practice row */
+  traceCellCount: number;
+  /** Number of blank cells (auto-fills remaining columns to end of row) */
+  blankCellCount: number;
 }
 
 export interface WorksheetPage {

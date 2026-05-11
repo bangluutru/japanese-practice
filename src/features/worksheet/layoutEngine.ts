@@ -4,12 +4,16 @@ import type {
   WorksheetSettings,
   WorksheetPage,
   WorksheetRow,
-  WorksheetCell,
 } from "./worksheetTypes";
 
 // ============================================================
-// Layout Engine — Generates worksheet pages from characters
+// Layout Engine — Two-row-per-character layout
 // ============================================================
+
+// Each character block = header row (stroke order) + practice row (trace/blank)
+const HEADER_RATIO = 0.45;       // header height as fraction of cellSizeMm
+const HEADER_PRACTICE_GAP = 0.5; // mm gap between header and practice sub-rows
+const BLOCK_GAP = 1.5;           // mm gap between character blocks
 
 /** Get page dimensions based on settings */
 export function getPageDimensions(settings: WorksheetSettings): {
@@ -45,77 +49,42 @@ export function getCellsPerRow(settings: WorksheetSettings): number {
   return Math.floor(printable.widthMm / settings.cellSizeMm);
 }
 
-/** Calculate the row height in mm */
-export function getRowHeightMm(settings: WorksheetSettings): number {
-  // One row of cells + small gap
-  return settings.cellSizeMm + 1;
+/** Height of the stroke-order header sub-row */
+export function getHeaderHeightMm(settings: WorksheetSettings): number {
+  return settings.cellSizeMm * HEADER_RATIO;
 }
 
-/** Generate cells for a single character row */
-export function generateRowCells(
+/** Total height of one character block (header + gap + practice + between-block gap) */
+export function getRowHeightMm(settings: WorksheetSettings): number {
+  return getHeaderHeightMm(settings) + HEADER_PRACTICE_GAP + settings.cellSizeMm + BLOCK_GAP;
+}
+
+/** Generate a single worksheet row for one character */
+export function generateWorksheetRow(
   entry: JapaneseCharacterEntry,
   strokeData: CharacterStrokeData | null,
   settings: WorksheetSettings
-): WorksheetCell[] {
+): WorksheetRow {
   const maxCells = getCellsPerRow(settings);
-  const cells: WorksheetCell[] = [];
 
-  // 1. Label cell
-  cells.push({ type: "label", character: entry });
+  // Header: 1 label cell + stroke steps (at most maxCells - 1 steps)
+  const totalStrokes = strokeData?.strokes.length ?? 0;
+  const maxSteps =
+    settings.maxProgressiveCells === "all"
+      ? totalStrokes
+      : Math.min(settings.maxProgressiveCells, totalStrokes);
+  const strokeStepCount = Math.min(maxSteps, maxCells - 1);
 
-  // 2. Font sample cell
-  cells.push({ type: "font-sample", character: entry });
+  // Practice: 1 reference cell + N trace cells + auto-fill blank to end of row
+  const traceCellCount = Math.min(settings.traceCells, maxCells - 1);
+  const blankCellCount = maxCells - 1 - traceCellCount;
 
-  // 3. Stroke order full cell (if data available)
-  if (strokeData) {
-    cells.push({ type: "stroke-order-full", character: entry });
-
-    // 4. Progressive stroke cells
-    const totalStrokes = strokeData.strokes.length;
-    const maxProg =
-      settings.maxProgressiveCells === "all"
-        ? totalStrokes
-        : Math.min(settings.maxProgressiveCells, totalStrokes);
-
-    // Calculate remaining cells for progressive, trace, and blank
-    const usedSoFar = cells.length;
-    const remainingForPractice = maxCells - usedSoFar - settings.traceCells - settings.blankPracticeCells;
-    const actualProgressive = Math.max(0, Math.min(maxProg, remainingForPractice));
-
-    for (let step = 1; step <= actualProgressive; step++) {
-      cells.push({ type: "progressive-stroke", character: entry, step });
-    }
-  } else {
-    // No stroke data
-    cells.push({
-      type: "missing-data",
-      character: entry,
-      reason: "Stroke data not available",
-    });
-  }
-
-  // 5. Trace cells
-  for (let i = 0; i < settings.traceCells; i++) {
-    if (cells.length < maxCells) {
-      cells.push({ type: "trace", character: entry });
-    }
-  }
-
-  // 6. Blank practice cells (configured amount)
-  const blanksToAdd = Math.min(
-    settings.blankPracticeCells,
-    maxCells - cells.length
-  );
-  for (let i = 0; i < blanksToAdd; i++) {
-    cells.push({ type: "blank" });
-  }
-
-  // 7. Fill any remaining slots so every row has exactly maxCells cells
-  while (cells.length < maxCells) {
-    cells.push({ type: "blank" });
-  }
-
-  return cells.slice(0, maxCells);
+  return {
+    character: entry,
+    strokeStepCount: strokeData ? strokeStepCount : 0,
+    traceCellCount,
+    blankCellCount,
+  };
 }
 
 /** Generate all worksheet pages */
@@ -127,27 +96,23 @@ export function generateWorksheetPages(
   const printable = getPrintableArea(settings);
   const rowHeight = getRowHeightMm(settings);
 
-  // Title area height
   const titleHeightMm = 8;
   const availableHeight = printable.heightMm - titleHeightMm;
   const rowsPerPage = Math.floor(availableHeight / rowHeight);
 
   const allRows: WorksheetRow[] = characters.map((entry) => {
     const strokeData = strokeDataMap.get(entry.char) ?? null;
-    const cells = generateRowCells(entry, strokeData, settings);
-    return { character: entry, cells };
+    return generateWorksheetRow(entry, strokeData, settings);
   });
 
   const pages: WorksheetPage[] = [];
   let pageIndex = 0;
 
   for (let i = 0; i < allRows.length; i += rowsPerPage) {
-    const pageRows = allRows.slice(i, i + rowsPerPage);
-    pages.push({ pageIndex, rows: pageRows });
+    pages.push({ pageIndex, rows: allRows.slice(i, i + rowsPerPage) });
     pageIndex++;
   }
 
-  // Ensure at least one page even if empty
   if (pages.length === 0) {
     pages.push({ pageIndex: 0, rows: [] });
   }
