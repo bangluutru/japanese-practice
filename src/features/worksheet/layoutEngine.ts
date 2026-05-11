@@ -10,9 +10,12 @@ import type {
 // Layout Engine — Two-row-per-character layout
 // ============================================================
 
-// Each character block = header row (stroke order) + practice row (trace/blank)
-const HEADER_RATIO = 0.45;       // header height as fraction of cellSizeMm
-const HEADER_PRACTICE_GAP = 0.5; // mm gap between header and practice sub-rows
+// Each character block = header area (stroke order) + practice row (trace/blank)
+// Header area is always 2× mini-cell height so block height is constant regardless of stroke count.
+// Few strokes → single row of full-width cells (clearer); many strokes → 2 rows of half-width cells.
+const HEADER_RATIO = 0.45;       // mini-cell height as fraction of cellSizeMm
+const HEADER_ROWS = 2;           // header area = HEADER_ROWS × mini-cell height (fixed)
+const HEADER_PRACTICE_GAP = 0.5; // mm gap between header area and practice sub-row
 const BLOCK_GAP = 1.5;           // mm gap between character blocks
 
 /** Get page dimensions based on settings */
@@ -49,8 +52,13 @@ export function getCellsPerRow(settings: WorksheetSettings): number {
   return Math.floor(printable.widthMm / settings.cellSizeMm);
 }
 
-/** Height of the stroke-order header sub-row */
+/** Total height of the stroke-order header area (always 2× mini-cell height) */
 export function getHeaderHeightMm(settings: WorksheetSettings): number {
+  return settings.cellSizeMm * HEADER_RATIO * HEADER_ROWS;
+}
+
+/** Height of one mini stroke-step cell (half the header area height) */
+export function getMiniCellHeightMm(settings: WorksheetSettings): number {
   return settings.cellSizeMm * HEADER_RATIO;
 }
 
@@ -66,14 +74,20 @@ export function generateWorksheetRow(
   settings: WorksheetSettings
 ): WorksheetRow {
   const maxCells = getCellsPerRow(settings);
+  const singleRowCapacity = maxCells - 1; // full-width cells per header row
+  // In double-row mode each cell is half-width → 2× per row, across 2 rows → 4× capacity
+  const doubleRowCapacity = singleRowCapacity * 4;
 
-  // Header: 1 label cell + stroke steps (at most maxCells - 1 steps)
   const totalStrokes = strokeData?.strokes.length ?? 0;
   const maxSteps =
     settings.maxProgressiveCells === "all"
       ? totalStrokes
       : Math.min(settings.maxProgressiveCells, totalStrokes);
-  const strokeStepCount = Math.min(maxSteps, maxCells - 1);
+
+  // Mode is determined by how many steps the user wants to show
+  const useDoubleRow = maxSteps > singleRowCapacity;
+  const maxCapacity = useDoubleRow ? doubleRowCapacity : singleRowCapacity;
+  const strokeStepCount = Math.min(maxSteps, maxCapacity);
 
   // Practice: 1 reference cell + N trace cells + auto-fill blank to end of row
   const traceCellCount = Math.min(settings.traceCells, maxCells - 1);
@@ -84,6 +98,7 @@ export function generateWorksheetRow(
     strokeStepCount: strokeData ? strokeStepCount : 0,
     traceCellCount,
     blankCellCount,
+    headerRowMode: useDoubleRow ? "double" : "single",
   };
 }
 

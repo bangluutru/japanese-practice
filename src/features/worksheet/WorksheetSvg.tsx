@@ -8,6 +8,7 @@ import {
   getPrintableArea,
   getRowHeightMm,
   getHeaderHeightMm,
+  getCellsPerRow,
 } from "./layoutEngine";
 import { GridGuidesSvg } from "./cells/GridGuidesSvg";
 import { TraceCellSvg } from "./cells/TraceCellSvg";
@@ -34,7 +35,10 @@ export const WorksheetSvg = forwardRef<SVGSVGElement, WorksheetSvgProps>(
     const printable = getPrintableArea(settings);
     const cellSize = settings.cellSizeMm;
     const rowHeight = getRowHeightMm(settings);
-    const headerH = getHeaderHeightMm(settings);
+    const headerH = getHeaderHeightMm(settings); // full header area = 2× mini-cell height
+    const miniCellH = headerH / 2;               // single mini-cell height
+    const miniCellW = cellSize / 2;
+    const singleRowCapacity = getCellsPerRow(settings) - 1;
 
     return (
       <svg
@@ -81,18 +85,36 @@ export const WorksheetSvg = forwardRef<SVGSVGElement, WorksheetSvgProps>(
               />
 
               {strokeData &&
-                Array.from({ length: row.strokeStepCount }, (_, i) => (
-                  <HeaderStrokeStepCell
-                    key={`hstep-${i}`}
-                    x={printable.x + (i + 1) * cellSize}
-                    y={blockY}
-                    width={cellSize}
-                    height={headerH}
-                    strokeData={strokeData}
-                    step={i + 1}
-                    showNumbers={settings.showStrokeNumbers}
-                  />
-                ))}
+                (row.headerRowMode === "single"
+                  ? Array.from({ length: row.strokeStepCount }, (_, i) => (
+                      <HeaderStrokeStepCell
+                        key={`hstep-${i}`}
+                        x={printable.x + (i + 1) * cellSize}
+                        y={blockY}
+                        width={cellSize}
+                        height={headerH}
+                        strokeData={strokeData}
+                        step={i + 1}
+                        showNumbers={settings.showStrokeNumbers}
+                      />
+                    ))
+                  : Array.from({ length: row.strokeStepCount }, (_, i) => {
+                      const stepsPerMiniRow = singleRowCapacity * 2;
+                      const rowIdx = Math.floor(i / stepsPerMiniRow);
+                      const colIdx = i % stepsPerMiniRow;
+                      return (
+                        <HeaderStrokeStepCell
+                          key={`hstep-${i}`}
+                          x={printable.x + cellSize + colIdx * miniCellW}
+                          y={blockY + rowIdx * miniCellH}
+                          width={miniCellW}
+                          height={miniCellH}
+                          strokeData={strokeData}
+                          step={i + 1}
+                          showNumbers={settings.showStrokeNumbers}
+                        />
+                      );
+                    }))}
 
               {/* ── PRACTICE ROW: reference + trace + blank ── */}
 

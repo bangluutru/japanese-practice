@@ -33,6 +33,8 @@ export interface WorksheetRow {
   traceCellCount: number;
   /** Number of blank cells (auto-fills remaining columns to end of row) */
   blankCellCount: number;
+  /** single = full-width cells (1 row); double = half-width cells (2 rows) */
+  headerRowMode: "single" | "double";
 }
 
 export interface WorksheetPage {
