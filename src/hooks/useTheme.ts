@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 export type ThemeMode = 'system' | 'light' | 'dark';
 
-const STORAGE_KEY = 'practice-sheet-theme';
+const STORAGE_KEY = 'japanese-practice-sheet-theme';
 
 function applyTheme(mode: ThemeMode): void {
   const html = document.documentElement;

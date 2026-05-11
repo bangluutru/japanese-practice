@@ -85,7 +85,7 @@ export type Translations = {
 export const translations: Record<Language, Translations> = {
   en: {
     app: {
-      subtitle: 'Practice Sheet Builder',
+      subtitle: 'Japanese Practice Sheet',
       description: 'Generate printable Japanese writing worksheets',
     },
     categories: {

@@ -161,7 +161,7 @@ export const WorksheetSvg = forwardRef<SVGSVGElement, WorksheetSvgProps>(
           fill="#cccccc"
           fontFamily="Inter, sans-serif"
         >
-          Practice Sheet Builder
+          Japanese Practice Sheet
         </text>
       </svg>
     );

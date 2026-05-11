@@ -10,7 +10,7 @@ type I18nContextType = {
 
 const I18nContext = createContext<I18nContextType | null>(null);
 
-const STORAGE_KEY = 'practice-sheet-lang';
+const STORAGE_KEY = 'japanese-practice-sheet-lang';
 
 function detectLanguage(): Language {
   const stored = localStorage.getItem(STORAGE_KEY) as Language | null;
